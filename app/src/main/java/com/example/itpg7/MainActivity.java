@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                         if (!isValid) {
                             Toast.makeText(MainActivity.this, "Incorrect credentials, please try again!", Toast.LENGTH_LONG).show();
                         }
+                        else{
+                            openClientOverview();
+                        }
                     }
                 }
             });
@@ -68,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return false;
+    }
+
+    public void openClientOverview() {
+        Intent intent = new Intent(this, ClientOverviewPage.class);
+        startActivity(intent);
     }
 
 }
