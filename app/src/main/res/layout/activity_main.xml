@@ -13,7 +13,7 @@
         android:background="@drawable/backgorund" />
 
     <EditText
-        android:id="@+id/edtUsername"
+        android:id="@+id/eUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
@@ -29,12 +29,12 @@
         android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/edtPassword"
+        android:id="@+id/ePassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/edtUsername"
-        android:layout_alignTop="@+id/edtUsername"
-        android:layout_alignEnd="@+id/edtUsername"
+        android:layout_alignStart="@+id/eUsername"
+        android:layout_alignTop="@+id/eUsername"
+        android:layout_alignEnd="@+id/eUsername"
         android:layout_marginStart="-1dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="1dp"
@@ -62,9 +62,9 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/edtUsername"
-        android:layout_alignTop="@+id/edtUsername"
-        android:layout_alignEnd="@+id/edtUsername"
+        android:layout_alignStart="@+id/eUsername"
+        android:layout_alignTop="@+id/eUsername"
+        android:layout_alignEnd="@+id/eUsername"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_marginStart="15dp"
         android:layout_marginTop="11dp"
@@ -86,14 +86,15 @@
         android:textSize="60dp"
         android:textStyle="bold" />
 
+
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="283dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="serif"
         android:text="Login"
         android:textColor="@color/dark_blue"
@@ -107,14 +108,13 @@
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="315dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="-379dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="-337dp"
         android:src="@drawable/logo" />
 
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bLogin"
         android:layout_width="104dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -123,7 +123,7 @@
         android:layout_marginBottom="61dp"
         android:text="Log in"
         app:backgroundTint="#164E7A"
-        app:cornerRadius="30" />
+        app:cornerRadius="30dp" />
 
     <TextView
         android:id="@+id/textView4"
