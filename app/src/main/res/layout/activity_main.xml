@@ -9,8 +9,8 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="389dp"
-        android:background="@drawable/backgorund" />
+        android:layout_height="426dp"
+        android:background="@drawable/credits_background" />
 
     <EditText
         android:id="@+id/eUsername"
@@ -53,9 +53,9 @@
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="528dp"
         android:layout_marginEnd="272dp"
-        android:layout_marginBottom="-138dp"
+        android:layout_marginBottom="-156dp"
         app:srcCompat="@drawable/ic_password" />
 
     <ImageView
@@ -115,14 +115,14 @@
 
     <Button
         android:id="@+id/bLogin"
-        android:layout_width="104dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
         android:layout_below="@+id/ePassword"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="85dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="72dp"
         android:text="Log in"
         app:backgroundTint="#164E7A"
         app:cornerRadius="30dp" />
