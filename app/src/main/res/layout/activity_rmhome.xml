@@ -15,6 +15,7 @@
         android:text="Welcome \n Simon Smith"
         android:textStyle="bold"
         android:textSize="40sp"
+        android:textAlignment="center"
         />
 
     <GridLayout
@@ -39,6 +40,7 @@
             app:cardBackgroundColor="#943F51B5"
             app:cardCornerRadius="30dp"
             app:cardElevation="8dp" />
+
 
 
 
@@ -87,16 +89,6 @@
 
 
     </GridLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
 
 </RelativeLayout>
