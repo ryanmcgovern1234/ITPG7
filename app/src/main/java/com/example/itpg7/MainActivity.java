@@ -1,16 +1,34 @@
 package com.example.itpg7;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
 
     private EditText eUsername;
     private EditText ePasssword;
@@ -20,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     String userPassword = "";
 
     boolean isValid = false;
+
 
 
     class Credentials
@@ -33,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate (Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+
 
             eUsername = findViewById(R.id.eUsername);
             ePasssword = findViewById(R.id.ePassword);
@@ -52,14 +72,17 @@ public class MainActivity extends AppCompatActivity {
 
                         if (!isValid) {
                             Toast.makeText(MainActivity.this, "Incorrect credentials, please try again!", Toast.LENGTH_LONG).show();
-                        }
-                        else{
+                        } else {
                             openManagerHome();
                         }
                     }
                 }
             });
-    }
+
+
+
+        }
+
 
     private boolean validate(String userName, String userPassword)
     {
@@ -77,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, rmhome.class);
         startActivity(intent);
     }
+
+
 
 }
 //hello
