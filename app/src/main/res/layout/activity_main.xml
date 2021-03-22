@@ -9,8 +9,10 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="363dp"
-        android:background="@drawable/credits_background" />
+        android:layout_height="389dp"
+        android:layout_centerInParent="false"
+        android:background="@drawable/backgorund"
+        android:cropToPadding="false" />
 
     <EditText
         android:id="@+id/eUsername"
@@ -18,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="-56dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="-119dp"
         android:elevation="1.5dp"
         android:ems="10"
         android:fontFamily="serif"
@@ -35,9 +37,9 @@
         android:layout_alignStart="@+id/eUsername"
         android:layout_alignTop="@+id/eUsername"
         android:layout_alignEnd="@+id/eUsername"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
         android:elevation="1.5dp"
         android:ems="10"
         android:fontFamily="serif"
@@ -50,10 +52,12 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="413dp"
-        android:layout_marginEnd="277dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="-138dp"
         app:srcCompat="@drawable/ic_password" />
 
     <ImageView
@@ -63,9 +67,11 @@
         android:layout_alignStart="@+id/eUsername"
         android:layout_alignTop="@+id/eUsername"
         android:layout_alignEnd="@+id/eUsername"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="183dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="-110dp"
         app:srcCompat="@drawable/ic_username" />
 
     <TextView
@@ -101,24 +107,23 @@
         android:id="@+id/imageView5"
         android:layout_width="82dp"
         android:layout_height="71dp"
-        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="-337dp"
         android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/bLogin"
-        android:layout_width="100dp"
-        android:layout_height="62dp"
-        android:layout_above="@+id/textView4"
-        android:layout_below="@+id/ePassword"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="61dp"
         android:text="Log in"
         app:backgroundTint="#164E7A"
         app:cornerRadius="30dp" />
@@ -129,7 +134,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="146dp"
         android:layout_marginBottom="23dp"
         android:text="Forgot password?"
         android:textAlignment="center"
