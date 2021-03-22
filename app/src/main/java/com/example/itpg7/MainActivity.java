@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, rmhome.class);
+        Intent intent = new Intent(this, ClientOverviewPage.class);
         startActivity(intent);
     }
 
