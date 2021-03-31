@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ITPG7">
+        <activity android:name=".ui.MapPage"></activity>
         <activity
             android:name=".bottomNavBar"
-            android:label="@string/title_activity_nav_test"></activity>
+            android:label="@string/title_activity_nav_test" />
         <activity android:name=".ClientOverviewPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
