@@ -9,7 +9,7 @@
         android:title="@string/financial_dashboard" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_clientoverview"
         android:icon="@drawable/ic_baseline_person_search_24"
         android:title="@string/client_overview" />
     <item

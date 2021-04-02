@@ -10,4 +10,5 @@
     <string name="client_overview">Client Overview</string>
     <string name="know_your_client">Know Your Client</string>
     <string name="map">Map</string>
+    <string name="title_activity_main_activity2as">MainActivity</string>
 </resources>

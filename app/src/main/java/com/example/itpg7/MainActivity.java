@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, bottomNavBar.class);
+        Intent intent = new Intent(this, rmHome.class);
         startActivity(intent);
     }
 
