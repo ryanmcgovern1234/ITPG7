@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ClientOverviewPage">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
 
     <ImageView
         android:id="@+id/imageView7"
@@ -279,7 +287,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
-
 
 
 
