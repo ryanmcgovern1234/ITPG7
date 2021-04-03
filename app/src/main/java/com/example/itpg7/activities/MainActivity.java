@@ -1,33 +1,20 @@
-package com.example.itpg7;
+package com.example.itpg7.activities;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.SearchView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.appbar.MaterialToolbar;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.itpg7.R;
 
 public class MainActivity extends AppCompatActivity {
+
 
 
     private EditText eUsername;
@@ -39,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     boolean isValid = false;
 
-
-
     class Credentials
     {
         String name = "login";
@@ -49,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         @Override
-        protected void onCreate (Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
@@ -57,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
             eUsername = findViewById(R.id.eUsername);
             ePasssword = findViewById(R.id.ePassword);
             bLogin = findViewById(R.id.bLogin);
-
-
             bLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -97,12 +80,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, ClientOverviewPage.class);
+        Intent intent = new Intent(this, Notes_Listt.class);
         startActivity(intent);
     }
 
-
-
 }
-//hello
-// hey!
