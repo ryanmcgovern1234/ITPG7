@@ -1,4 +1,4 @@
-package com.example.itpg7.activities;
+package com.example.itpg7;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,10 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.itpg7.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, Notes_Listt.class);
+        Intent intent = new Intent(this, rmHome.class);
         startActivity(intent);
     }
 

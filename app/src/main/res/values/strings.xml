@@ -10,4 +10,9 @@
     <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
     <string name="delete_note">Delete note</string>
     <string name="cancel_dialogue">Cancel</string>
+    <string name="financialdashboard">FinancialDashboard</string>
+    <string name="client_overview">Client Overview</string>
+    <string name="home">Home</string>
+    <string name="know_your_client">Know Your Client</string>
+    <string name="map">Map</string>
 </resources>
