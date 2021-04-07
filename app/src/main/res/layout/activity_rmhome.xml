@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rmhome">
+    tools:context=".rmhome"
+    >
 
 
     <TextView
-        android:id="@+id/title_view"
+        android:id="@+id/title_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:text="Welcome \n Simon Smith"
-        android:textStyle="bold"
-        android:textSize="40sp"
         android:textAlignment="center"
-        />
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_below="@id/title_view"
+        android:layout_height="172dp"
+        android:layout_below="@id/title_name"
         android:layout_marginTop="95dp"
         android:columnCount="2"
         android:rowCount="1">
@@ -29,8 +28,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Notescard"
-            android:layout_width="213dp"
-            android:layout_height="210dp"
+            android:layout_width="164dp"
+            android:layout_height="136dp"
             android:layout_row="0"
             android:layout_rowWeight="0"
             android:layout_column="0"
@@ -40,10 +39,6 @@
             app:cardBackgroundColor="#943F51B5"
             app:cardCornerRadius="30dp"
             app:cardElevation="8dp" />
-
-
-
-
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -89,6 +84,75 @@
 
 
     </GridLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_rmtopback" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/rm2ndbackground" />
+
+    <TextView
+        android:id="@+id/rmname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="-111dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clientell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClienTell"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/newsbar" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/newsworld" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Trending News"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="30dp" />
 
 
 </RelativeLayout>
