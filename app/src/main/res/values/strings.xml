@@ -11,4 +11,5 @@
     <string name="know_your_client">Know Your Client</string>
     <string name="map">Map</string>
     <string name="title_activity_main_activity2as">MainActivity</string>
+    <string name="market_analysis"><u>Market Analysis</u></string>
 </resources>
