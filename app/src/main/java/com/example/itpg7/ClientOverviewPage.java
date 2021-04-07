@@ -27,10 +27,12 @@ public class ClientOverviewPage extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.navigation_home:
-                        startActivity(new Intent(getApplicationContext(),rmHome.class));
+                        startActivity(new Intent(getApplicationContext(), rmHome.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.navigation_clientoverview:
+                        startActivity(new Intent(getApplicationContext(), ClientOverviewPage.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     // TODO Need to go on everyone's separate pages now
                     case R.id.navigation_dashboard:
