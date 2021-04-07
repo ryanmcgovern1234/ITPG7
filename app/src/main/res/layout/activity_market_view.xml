@@ -15,11 +15,11 @@
         app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="443dp"
+        android:layout_marginBottom="503dp"
         app:srcCompat="@drawable/backgroundmain" />
 
 </RelativeLayout>
