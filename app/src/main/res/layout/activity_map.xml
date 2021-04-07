@@ -26,26 +26,6 @@
         tools:layout_editor_absoluteY="480dp" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="17dp"
-        android:layout_height="26dp"
-        android:background="#ff"
-        android:tint="@android:color/red"
-        app:srcCompat="@drawable/ic_map"
-        tools:layout_editor_absoluteX="283dp"
-        tools:layout_editor_absoluteY="468dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="17dp"
-        android:layout_height="26dp"
-        android:background="#ff"
-        android:tint="@android:color/red"
-        app:srcCompat="@drawable/ic_map"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="463dp" />
-
-    <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="17dp"
         android:layout_height="26dp"
@@ -103,26 +83,6 @@
         android:tint="@android:color/red"
         app:srcCompat="@drawable/ic_map"
         tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="431dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="17dp"
-        android:layout_height="26dp"
-        android:background="#ff"
-        android:tint="@android:color/red"
-        app:srcCompat="@drawable/ic_map"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="450dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="17dp"
-        android:layout_height="26dp"
-        android:background="#ff"
-        android:tint="@android:color/red"
-        app:srcCompat="@drawable/ic_map"
-        tools:layout_editor_absoluteX="271dp"
         tools:layout_editor_absoluteY="431dp" />
 
     <ImageButton
