@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.itpg7.ui.dashboard.MarketView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class rmHome extends AppCompatActivity {
@@ -31,9 +30,8 @@ public class rmHome extends AppCompatActivity {
                         return true;
                     case R.id.navigation_clientoverview:
                         startActivity(new Intent(getApplicationContext(),ClientOverviewPage.class));
-                    overridePendingTransition(0, 0);
+                        overridePendingTransition(0, 0);
                     return true;
-                    // TODO Need to go on everyone's separate pages now
                     case R.id.navigation_dashboard:
                         startActivity(new Intent(getApplicationContext(), MarketView.class));
                         overridePendingTransition(0, 0);

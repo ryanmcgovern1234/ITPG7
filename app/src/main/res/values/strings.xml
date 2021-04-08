@@ -12,4 +12,6 @@
     <string name="map">Map</string>
     <string name="title_activity_main_activity2as">MainActivity</string>
     <string name="market_analysis"><u>Market Analysis</u></string>
+    <string name="client_performance"><b><u>Client Performance</u></b></string>
+    <string name="worst_performers"><b><u>Worst Performers:</u></b></string>
 </resources>

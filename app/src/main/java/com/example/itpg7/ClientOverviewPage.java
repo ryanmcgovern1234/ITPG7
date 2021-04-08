@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.itpg7.ui.dashboard.MarketView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ClientOverviewPage extends AppCompatActivity {

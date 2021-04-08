@@ -1,4 +1,4 @@
-package com.example.itpg7.ui.dashboard;
+package com.example.itpg7;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,19 +6,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-import com.example.itpg7.ClientOverviewPage;
-import com.example.itpg7.R;
-import com.example.itpg7.rmHome;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MarketView extends AppCompatActivity {
 
+    private Button buttonsecurity = (Button) findViewById(R.id.buttonsec);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_market_view);
+
+        buttonsecurity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                openSecurity();
+            }
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
 
@@ -47,5 +54,11 @@ public class MarketView extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void openSecurity() {
+        Intent intent = new Intent(this, SecurityPage.class);
+        startActivity(intent);
     }
 }

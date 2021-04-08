@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.itpg7.ui.dashboard.MarketView;
-
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText eUsername;
@@ -76,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, MarketView.class);
+        Intent intent = new Intent(this, rmHome.class);
         startActivity(intent);
     }
 
