@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rmhome"
-    >
+    tools:context=".rmHome" >
 
 
     <TextView
@@ -98,23 +97,10 @@
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="403dp"
         app:srcCompat="@drawable/rm2ndbackground" />
-
-    <TextView
-        android:id="@+id/rmname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView7"
-        android:layout_alignRight="@+id/imageView7"
-        android:layout_centerHorizontal="true"
-        android:layout_marginVertical="@android:dimen/app_icon_size"
-        android:layout_marginLeft="111dp"
-        android:layout_marginRight="-111dp"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:textSize="60dp"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/clientell"
@@ -125,34 +111,72 @@
         android:textSize="30dp"
         />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/rmname"
+        android:layout_width="268dp"
+        android:layout_height="80dp"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="474dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="475dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/newsbutton"
+        android:layout_width="194dp"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/newsbar" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="213dp"
+        android:layout_marginBottom="39dp"
+        android:text="Trending news"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        app:backgroundTint="#3F51B5"
+        app:cornerRadius="15dp" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="210dp"
-        android:layout_height="100dp"
+        android:id="@+id/imageView8"
+        android:layout_width="42dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="364dp"
+        android:layout_marginBottom="44dp"
+        android:adjustViewBounds="true"
+        android:elevation="2dp"
         app:srcCompat="@drawable/newsworld" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:text="Trending News"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-
-        android:textSize="30dp" />
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="39dp"
+        android:text="Track and Trace"
+        app:backgroundTint="#3F51B5"
+        app:cornerRadius="15dp" />
 
 
 </RelativeLayout>
