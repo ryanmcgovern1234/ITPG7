@@ -10,6 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.itpg7.activities.ClientProfile;
+import com.example.itpg7.activities.CreateNoteActivity;
+import com.example.itpg7.activities.Notes_Listt;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, rmHome.class);
+        Intent intent = new Intent(this, Notes_Listt.class);
         startActivity(intent);
     }
 

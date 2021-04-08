@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutCreateNote"
     tools:context=".activities.CreateNoteActivity">
 
     <ScrollView
@@ -30,20 +31,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
+
             <ImageView
                 android:id="@+id/imageSave"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                app:srcCompat="@drawable/ic_done"
-                android:layout_marginEnd="@dimen/_12sdp"
-                android:contentDescription="@string/app_name"
-                android:paddingBottom="@dimen/_40sdp"
-                android:background="@drawable/background_done_button"
+                android:layout_width="34dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintBottom_toBottomOf="@id/imageBack"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/imageBack"/>
-            
-            
+                app:layout_constraintTop_toTopOf="@id/imageBack"
+                app:layout_constraintVertical_bias="0.461"
+                app:srcCompat="@drawable/ic_done" />
 
             <EditText
                 android:id="@+id/inputNoteTitle"
@@ -52,7 +50,8 @@
                 android:layout_marginStart="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:background="@null"
+                android:background="@drawable/edit_text_border"
+                android:textAlignment="center"
                 android:hint="@string/note_title"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
@@ -66,6 +65,7 @@
                 android:id="@+id/textDateTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:includeFontPadding="false"
                 android:textSize="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="@id/inputNoteTitle"
@@ -89,8 +89,9 @@
                 android:textSize="@dimen/_13sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/viewSubtitleIndicator"
-                app:layout_constraintTop_toBottomOf="@id/textDateTime"/>
-            
+                app:layout_constraintTop_toBottomOf="@id/textDateTime"
+                />
+
             <View
                 android:id="@+id/viewSubtitleIndicator"
                 android:layout_width="@dimen/_5sdp"
@@ -121,31 +122,27 @@
                 app:layout_constraintTop_toBottomOf="@id/inputNoteSubtitle"
                 />
 
+            <ImageView
+                android:id="@+id/layoutDeleteNote"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                tools:ignore="MissingConstraints"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_delete"
+                android:background="@drawable/background_delete_color"
+                app:tint="@color/colordelete"
+                android:layout_marginEnd="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="@id/imageBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageBack"
+                />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </ScrollView>
+
+
+
     
-    <LinearLayout
-        android:id="@+id/layoutDeleteNote"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_marginStart="@dimen/_283sdp"
-        android:layout_marginEnd="@dimen/_1sdp"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:gravity="center_vertical"
-
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="@dimen/_22sdp"
-            android:layout_height="@dimen/_22sdp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/ic_delete"
-            app:tint="@color/colordelete" />
-
-
-    </LinearLayout>
-    
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

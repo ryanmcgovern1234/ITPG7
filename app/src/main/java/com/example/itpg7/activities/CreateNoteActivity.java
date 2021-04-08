@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ import com.example.itpg7.database.NotesDatabase;
 import com.example.itpg7.entities.Note;
 
 import org.w3c.dom.Text;
+
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -72,6 +74,8 @@ public class CreateNoteActivity extends AppCompatActivity {
              alreadyAvailableNote =(Note) getIntent().getSerializableExtra("note");
              setViewOrUpdate();
         }
+
+        visibilityDelete();
 
     }
 
@@ -127,6 +131,21 @@ public class CreateNoteActivity extends AppCompatActivity {
 
     }
 
+
+    private void visibilityDelete(){
+        final LinearLayout layoutCreateNote = findViewById(R.id.layoutCreateNote);
+        if(alreadyAvailableNote!=null){
+            layoutCreateNote.findViewById(R.id.layoutDeleteNote).setVisibility(View.VISIBLE);
+            layoutCreateNote.findViewById(R.id.layoutDeleteNote).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showDeleteNoteDialog();
+                }
+            });
+
+        }
+    }
+
     private void showDeleteNoteDialog(){
         if(dialogDeleteNote==null){
             AlertDialog.Builder builder = new AlertDialog.Builder(CreateNoteActivity.this);
@@ -178,4 +197,6 @@ public class CreateNoteActivity extends AppCompatActivity {
 
         dialogDeleteNote.show();
     }
+
+
 }
