@@ -27,6 +27,7 @@ public class MarketView extends AppCompatActivity {
 
 
     LineChart mpLineChart;
+    LineChart customerChart;
     RadioButton rt;
     RadioButton rf;
     RadioButton re;
@@ -42,8 +43,18 @@ public class MarketView extends AppCompatActivity {
         re = (RadioButton) findViewById(R.id.radioEnergy);
         rc = (RadioButton) findViewById(R.id.radioCrypto);
         rg = (RadioGroup) findViewById(R.id.radiogroup);
-
+        customerChart = (LineChart) findViewById(R.id.customerview);
         mpLineChart = (LineChart) findViewById(R.id.trendview);
+
+        //Customer chart
+        LineDataSet lineDataSetC = new LineDataSet(Customer(), "");
+        ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
+        dataSetC.add(lineDataSetC);
+        LineData dataC = new LineData(dataSetC);
+        customerChart.setData(dataC);
+        customerChart.invalidate();
+
+
         //Base case to initialize tech for line graph
         rt.setChecked(true);
         LineDataSet lineDataSet1 = new LineDataSet(Tech(), "Tech");
@@ -174,6 +185,16 @@ public class MarketView extends AppCompatActivity {
         dataVals.add(new Entry(1, 25));
         dataVals.add(new Entry(2, 30));
         dataVals.add(new Entry(3, 28));
+
+        return dataVals;
+    }
+
+    private ArrayList<Entry> Customer(){
+        ArrayList<Entry> dataVals = new ArrayList<Entry>();
+        dataVals.add(new Entry(0, 10000));
+        dataVals.add(new Entry(1, 25000));
+        dataVals.add(new Entry(2, 20000));
+        dataVals.add(new Entry(3, 28000));
 
         return dataVals;
     }
