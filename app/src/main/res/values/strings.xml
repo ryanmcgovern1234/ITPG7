@@ -14,4 +14,5 @@
     <string name="market_analysis"><u>Market Analysis</u></string>
     <string name="client_performance"><b><u>Client Performance</u></b></string>
     <string name="worst_performers"><b><u>Worst Performers:</u></b></string>
+    <string name="energy">Energy</string>
 </resources>
