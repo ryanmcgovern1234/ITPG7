@@ -23,12 +23,15 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class MarketView extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference techRef = db.collection("securities").document("TECH");
+
 
 
     LineChart mpLineChart;
@@ -52,7 +55,10 @@ public class MarketView extends AppCompatActivity {
         customerChart = (LineChart) findViewById(R.id.customerview);
         mpLineChart = (LineChart) findViewById(R.id.trendview);
         blah = (TextView) findViewById(R.id.textView3);
-        //Customer chart
+
+        System.out.println("Test:::" + techRef.getId());
+
+            //Customer chart
         LineDataSet lineDataSetC = new LineDataSet(Customer(), "Customer");
         ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
         dataSetC.add(lineDataSetC);
@@ -153,6 +159,8 @@ public class MarketView extends AppCompatActivity {
 
 
     }
+
+
 
     private ArrayList<Entry> Tech(){
 

@@ -23,23 +23,27 @@ public class SecurityPage extends AppCompatActivity  {
     private LineChart secgraph;
     private EditText edtxt;
     private Button loadbtn;
-    String ticker;
+    private TextView txtview;
+    private String ticker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_security_page);
 
+        txtview = (TextView) findViewById(R.id.textView3);
         secgraph = (LineChart) findViewById(R.id.security);
         edtxt = (EditText) findViewById(R.id.editText1);
-        loadbtn = (Button) findViewById(R.id.button1);
+        loadbtn = (Button) findViewById(R.id.loadbutton);
         //Loading graphs
-        ticker = edtxt.getText().toString();
 
         loadbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+                ticker = edtxt.getText().toString();
                 onClickMe();
+                txtview.setText(ticker);
+
             }
         });
 
