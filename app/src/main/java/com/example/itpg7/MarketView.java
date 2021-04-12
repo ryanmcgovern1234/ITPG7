@@ -3,10 +3,8 @@ package com.example.itpg7;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Entity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -19,11 +17,18 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
 public class MarketView extends AppCompatActivity {
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private DocumentReference techRef = db.collection("securities").document("TECH");
 
 
     LineChart mpLineChart;
@@ -33,6 +38,7 @@ public class MarketView extends AppCompatActivity {
     RadioButton re;
     RadioButton rc;
     RadioGroup rg;
+    TextView blah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +51,14 @@ public class MarketView extends AppCompatActivity {
         rg = (RadioGroup) findViewById(R.id.radiogroup);
         customerChart = (LineChart) findViewById(R.id.customerview);
         mpLineChart = (LineChart) findViewById(R.id.trendview);
-
+        blah = (TextView) findViewById(R.id.textView3);
         //Customer chart
-        LineDataSet lineDataSetC = new LineDataSet(Customer(), "");
+        LineDataSet lineDataSetC = new LineDataSet(Customer(), "Customer");
         ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
         dataSetC.add(lineDataSetC);
         LineData dataC = new LineData(dataSetC);
         customerChart.setData(dataC);
         customerChart.invalidate();
-
 
         //Base case to initialize tech for line graph
         rt.setChecked(true);
@@ -76,6 +81,7 @@ public class MarketView extends AppCompatActivity {
                         LineData data = new LineData(dataSets);
                         mpLineChart.setData(data);
                         mpLineChart.invalidate();
+
                         break;
                     case R.id.radioFinance:
                         LineDataSet lineDataSet2 = new LineDataSet(Finance(), "Finance");
@@ -145,13 +151,13 @@ public class MarketView extends AppCompatActivity {
             }
         });
 
+
     }
 
-
-
     private ArrayList<Entry> Tech(){
+
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 20));
+        dataVals.add(new Entry(0,0));
         dataVals.add(new Entry(1, 35));
         dataVals.add(new Entry(2, 30));
         dataVals.add(new Entry(3, 28));

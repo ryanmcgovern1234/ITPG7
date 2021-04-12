@@ -15,4 +15,6 @@
     <string name="client_performance"><b><u>Client Performance</u></b></string>
     <string name="worst_performers"><b><u>Worst Performers:</u></b></string>
     <string name="energy">Energy</string>
+    <string name="security_page"><u><b>Security Page</b></u></string>
+    <string name="enter_ticker">Enter Ticker:</string>
 </resources>
