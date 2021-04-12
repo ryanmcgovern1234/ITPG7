@@ -101,8 +101,9 @@ public class Notes_Listt extends AppCompatActivity implements NotesListener {
         startActivityForResult(intent , REQUEST_CODE_UPDATE_NOTE);
 
     }
+    //Call this method in Profile Page and
 
-    private void getNotes(final int requestCode, final boolean isNoteDeleted){
+    public void getNotes(final int requestCode, final boolean isNoteDeleted){
 
         @SuppressLint("StaticFieldLeak")
         class GetNotesTask extends AsyncTask<Void, Void, List<Note>>{

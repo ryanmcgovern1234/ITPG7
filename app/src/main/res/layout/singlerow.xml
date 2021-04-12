@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/background_client_page"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text="demo name"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerIDtext"
+            android:text="demo ID"
+            android:textSize="@dimen/_15sdp"
+            android:layout_below="@+id/nametext"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

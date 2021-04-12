@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.itpg7.activities.ClientOverviewPage;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class rmHome extends AppCompatActivity {
@@ -30,7 +30,7 @@ public class rmHome extends AppCompatActivity {
                     case R.id.navigation_home:
                         return true;
                     case R.id.navigation_clientoverview:
-                        startActivity(new Intent(getApplicationContext(),ClientOverviewPage.class));
+                        startActivity(new Intent(getApplicationContext(), ClientOverviewPage.class));
                     overridePendingTransition(0, 0);
                     return true;
                     // TODO Need to go on everyone's separate pages now
