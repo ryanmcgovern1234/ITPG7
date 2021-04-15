@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".rmHome" >
+    android:layout_height="match_parent" >
 
 
     <TextView
@@ -108,8 +107,7 @@
         android:layout_height="wrap_content"
         android:text="ClienTell"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/rmname"
@@ -127,56 +125,39 @@
         android:textSize="60dp"
         android:textStyle="bold" />
 
-
-    <Button
-        android:id="@+id/newsbutton"
-        android:layout_width="194dp"
-        android:layout_height="92dp"
-        android:layout_alignParentStart="true"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="39dp"
-        android:text="Trending news"
-        android:textAlignment="textEnd"
-        android:textSize="16sp"
-        app:backgroundTint="#3F51B5"
-        app:cornerRadius="15dp" />
+        android:layout_marginTop="434dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="42dp"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="479dp"
-        android:layout_marginEnd="364dp"
-        android:layout_marginBottom="44dp"
-        android:adjustViewBounds="true"
-        android:elevation="2dp"
-        app:srcCompat="@drawable/newsworld" />
+        <RelativeLayout
+            android:id="@+id/news_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="93dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="222dp"
-        android:layout_marginTop="471dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="39dp"
-        android:text="Track and Trace"
-        app:backgroundTint="#3F51B5"
-        app:cornerRadius="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending News"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
 
 
 </RelativeLayout>
