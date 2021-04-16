@@ -24,18 +24,22 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
     @Override
     public FeaturedViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_card_design,parent, false);
+        FeaturedViewHolder featuredViewHolder = new FeaturedViewHolder(view);
 
         return null;
     }
 
     @Override
     public void onBindViewHolder(@NonNull FeaturedViewHolder holder, int position) {
+        FeaturedHelperClass featuredHelperClass = featuredLocations.get(position);
+
+        holder.image.setImageResource(featuredHelperClass.getImage());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return featuredLocations.size();
     }
 
     public static class FeaturedViewHolder extends RecyclerView.ViewHolder{
