@@ -126,10 +126,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#1234"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="156dp"
         android:textColor="#ffffff"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imageView17"
@@ -149,11 +149,11 @@
 
     <ImageView
         android:id="@+id/imageView25"
-        android:layout_width="113dp"
-        android:layout_height="187dp"
+        android:layout_width="111dp"
+        android:layout_height="170dp"
         app:srcCompat="@drawable/arrowup_foreground"
         tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_editor_absoluteY="182dp" />
 
     <View
         android:id="@+id/view3"
@@ -172,5 +172,15 @@
         android:textSize="27dp"
         tools:layout_editor_absoluteX="180dp"
         tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Progress"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="165dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
