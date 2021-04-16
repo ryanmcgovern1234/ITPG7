@@ -35,7 +35,8 @@ public class SecurityPage extends AppCompatActivity  {
         secgraph = (LineChart) findViewById(R.id.security);
         edtxt = (EditText) findViewById(R.id.editText1);
         loadbtn = (Button) findViewById(R.id.loadbutton);
-        //Loading graphs
+
+        //Loading graphs for stocks
 
         loadbtn.setOnClickListener(new View.OnClickListener(){
             @Override
