@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337811177313",
+    "project_id": "integrativeteamprojectg7",
+    "storage_bucket": "integrativeteamprojectg7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337811177313:android:04116b0a811c6423b40f20",
+        "android_client_info": {
+          "package_name": "com.example.itpg7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337811177313-dij81h07h5km1o13vd8i9bintjate4e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxrnALeCUf2VkB9YgoMDG3r1Y37qY-GwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337811177313-dij81h07h5km1o13vd8i9bintjate4e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
