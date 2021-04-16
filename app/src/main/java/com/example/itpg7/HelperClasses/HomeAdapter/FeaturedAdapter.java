@@ -26,7 +26,7 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_card_design,parent, false);
         FeaturedViewHolder featuredViewHolder = new FeaturedViewHolder(view);
 
-        return null;
+        return featuredViewHolder;
     }
 
     @Override

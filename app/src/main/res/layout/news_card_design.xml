@@ -18,14 +18,10 @@
             android:id="@+id/news_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background=""
             android:scaleType="centerInside"
             android:src="@drawable/financialtimeslogo" />
 
-
-
-
-
+        
 
     </LinearLayout>
 

@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ITPG7">
-        <activity android:name=".Newspage"></activity>
-        <activity android:name=".Rmhome" />
+        <activity android:name=".rmHome" />
         <activity android:name=".ClientOverviewPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
