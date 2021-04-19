@@ -117,29 +117,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="434dp"
-        android:layout_marginBottom="52dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="0dp"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Trending News"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/news_recycler"
                 android:layout_width="wrap_content"
-                android:layout_height="115dp" />
+                android:layout_height="wrap_content" />
 
 
         </RelativeLayout>
@@ -148,6 +140,49 @@
     </LinearLayout>
 
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="212dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="199dp"
+        android:layout_marginBottom="167dp"
+        android:src="@drawable/newsbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="194dp"
+        android:text="Trending News"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="191dp"
+        android:src="@drawable/creditsuissenewslogo" />
 
 
 </RelativeLayout>

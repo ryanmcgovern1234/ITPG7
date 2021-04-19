@@ -82,10 +82,10 @@ public class rmHome extends AppCompatActivity{
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.financialtimeslogo));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.financialtimessquarelogo));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.lselogo));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.bbclogo));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.wallstreetjournal2));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.wallstreetjournal));
 
         adapter = new FeaturedAdapter(featuredLocations);
         newsRecycler.setAdapter(adapter);

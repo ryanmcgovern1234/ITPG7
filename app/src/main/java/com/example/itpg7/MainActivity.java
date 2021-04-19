@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openManagerHome() {
-        Intent intent = new Intent(this, KYCExisting.class);
+        Intent intent = new Intent(this, KYCMain.class);
         startActivity(intent);
     }
 
