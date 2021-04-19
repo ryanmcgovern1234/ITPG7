@@ -60,6 +60,10 @@ public class KYCExisting extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), MarketView.class));
                         overridePendingTransition(0, 0);
                         return true;
+                    case R.id.navigation_KYC:
+                        startActivity(new Intent(getApplicationContext(), KYCExisting.class));
+                        overridePendingTransition(0, 0);
+                        return true;
 
                 }
                 return false;
