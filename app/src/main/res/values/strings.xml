@@ -17,4 +17,6 @@
     <string name="energy">Energy</string>
     <string name="security_page"><u><b>Security Page</b></u></string>
     <string name="enter_ticker">Enter Ticker:</string>
+    <string name="existing_client"><u><b>Existing Client</b></u></string>
+    <string name="KYCClientname"><u><b>TextView</b></u></string>
 </resources>
