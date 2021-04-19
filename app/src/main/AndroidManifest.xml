@@ -11,8 +11,13 @@
         android:theme="@style/Theme.ITPG7">
         <activity android:name=".rmHome" />
         <activity android:name=".ClientOverviewPage" />
+        <activity android:name=".MarketView"/>
+        <activity android:name=".SecurityPage"/>
         <activity android:name=".MainActivity">
-            <intent-filter>
+
+
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
