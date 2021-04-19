@@ -20,6 +20,7 @@ public class KYCExisting extends AppCompatActivity {
 
 
     private TextView clientname;
+    private TextView clientID;
     private String jeffbby = "01012022";
     private Date JeffDate;
 
@@ -36,7 +37,9 @@ public class KYCExisting extends AppCompatActivity {
 
         ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
         TextView clientname = (TextView)findViewById(R.id.textView8);
-        clientname.setText(Jeff.getDoB());
+        TextView clientID = (TextView)findViewById(R.id.textView2);
+        clientname.setText(Jeff.getName());
+        clientID.setText(Integer.toString(Jeff.getID()));
 
 
 
