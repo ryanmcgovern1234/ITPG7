@@ -15,24 +15,26 @@
         app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="414dp"
-        android:layout_height="179dp"
-        app:srcCompat="@drawable/backgroundmain"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-10dp" />
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="504dp"
+        app:srcCompat="@drawable/backgroundmain" />
 
     <TextView
-        android:id="@+id/KYC"
-        android:layout_width="200dp"
-        android:layout_height="95dp"
-        android:text="Know Your Client"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/textView3"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/kyc_page"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

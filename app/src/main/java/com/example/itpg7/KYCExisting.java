@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,6 +24,7 @@ public class KYCExisting extends AppCompatActivity {
     private TextView clientID;
     private String jeffbby = "01012022";
     private Date JeffDate;
+    private ProgressBar mProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class KYCExisting extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        ProgressBar mProgressBar = (ProgressBar)findViewById(R.id.progressBar);
+        mProgressBar.setScaleY(6f);
         ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
         TextView clientname = (TextView)findViewById(R.id.textView8);
         TextView clientID = (TextView)findViewById(R.id.textView2);
