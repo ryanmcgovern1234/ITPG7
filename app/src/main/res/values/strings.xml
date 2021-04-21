@@ -20,4 +20,5 @@
     <string name="existing_client"><u><b>Existing Client</b></u></string>
     <string name="KYCClientname"><u><b>TextView</b></u></string>
     <string name="kyc_page"><b><u>KYC Page</u></b></string>
+    <string name="incoming_client"><b><u>Incoming Client</u></b></string>
 </resources>
