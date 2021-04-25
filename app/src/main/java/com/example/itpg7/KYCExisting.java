@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.w3c.dom.Text;
+
 import java.text.DateFormat;
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
@@ -25,6 +27,7 @@ public class KYCExisting extends AppCompatActivity {
     private String jeffbby = "01012022";
     private Date JeffDate;
     private ProgressBar mProgressBar;
+    private TextView tProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +42,19 @@ public class KYCExisting extends AppCompatActivity {
 
         ProgressBar mProgressBar = (ProgressBar)findViewById(R.id.progressBar);
         mProgressBar.setScaleY(6f);
+        //Create Jeff Bezos
         ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
         TextView clientname = (TextView)findViewById(R.id.textView8);
         TextView clientID = (TextView)findViewById(R.id.textView2);
         clientname.setText(Jeff.getName());
         clientID.setText(Integer.toString(Jeff.getID()));
+        TextView tProgressBar = (TextView)findViewById(R.id.textViewBar);
+
+        //Set Text View based on Bar
+        double timeLeft = 365 - (365 * ((mProgressBar.getProgress()) / 100));
+        String progToDate = Double.toString(timeLeft);
+
+        tProgressBar.setText("You have " + progToDate + " days left until KYC due");
 
 
 

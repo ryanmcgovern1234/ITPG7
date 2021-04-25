@@ -92,5 +92,15 @@
         android:progress="30"
         android:progressBackgroundTint="@color/dark_blue" />
 
+    <TextView
+        android:id="@+id/textViewBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_marginBottom="-22dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="TextView" />
+
 
 </RelativeLayout>
