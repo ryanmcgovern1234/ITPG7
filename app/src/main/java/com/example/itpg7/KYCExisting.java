@@ -18,6 +18,7 @@ import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.function.IntToDoubleFunction;
 
 public class KYCExisting extends AppCompatActivity {
 
@@ -51,7 +52,7 @@ public class KYCExisting extends AppCompatActivity {
         TextView tProgressBar = (TextView)findViewById(R.id.textViewBar);
 
         //Set Text View based on Bar
-        double timeLeft = 365 - (365 * ((mProgressBar.getProgress()) / 100));
+        double timeLeft = 365 - ((Double.valueOf(mProgressBar.getProgress()) * 0.01)*365);
         String progToDate = Double.toString(timeLeft);
 
         tProgressBar.setText("You have " + progToDate + " days left until KYC due");
