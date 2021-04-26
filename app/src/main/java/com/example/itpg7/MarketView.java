@@ -151,6 +151,10 @@ public class MarketView extends AppCompatActivity {
                     // TODO Need to go on everyone's separate pages now
                     case R.id.navigation_dashboard:
                         return true;
+                    case R.id.navigation_KYC:
+                        startActivity(new Intent(getApplicationContext(), KYCMain.class));
+                        overridePendingTransition(0, 0);
+                        return true;
 
                 }
                 return false;

@@ -60,7 +60,7 @@ public class rmHome extends AppCompatActivity{
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.navigation_KYC:
-                        startActivity(new Intent(getApplicationContext(), KYCExisting.class));
+                        startActivity(new Intent(getApplicationContext(), KYCMain.class));
                         overridePendingTransition(0, 0);
                         return true;
 
