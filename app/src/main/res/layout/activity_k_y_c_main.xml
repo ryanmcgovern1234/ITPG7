@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-504dp"
+        android:layout_marginBottom="0dp"
         android:id="@+id/kycrecyclerview"/>
 
 
