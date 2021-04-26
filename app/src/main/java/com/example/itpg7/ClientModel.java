@@ -6,23 +6,40 @@ public class ClientModel {
 
     String name;
     Integer ID;
-    String DoB;
-    String Region;
-    String AccountType;
-    String Occupation;
-    Date kycdate;
+    String dob;
+    String region;
+    String accounttype;
+    String occupation;
+    String language;
+    String nationality;
+    String portfolio;
 
-    public ClientModel(String name, Integer ID,String DoB, String Region, String AccountType, String Occupation, Date kycdate) {
+    public ClientModel(String name, Integer ID,String dob, String Region, String accounttype, String occupation, String language, String nationality, String portfolio) {
 
         this.name = name;
         this.ID = ID;
-        this.DoB = DoB;
-        this.Region = Region;
-        this.AccountType = AccountType;
-        this.Occupation = Occupation;
-        this.kycdate = kycdate;
+        this.dob = dob;
+        this.region = region;
+        this.accounttype = accounttype;
+        this.occupation = occupation;
+        this.nationality = nationality;
+        this.portfolio = portfolio;
+        this.language = language;
 
     }
+
+
+    public String getLanguage(){return language;}
+
+    public void setLanguage(String language) {this.language = language;}
+
+    public String getNationality(){return nationality;}
+
+    public void setNationality(String nationality){this.nationality = nationality;}
+
+    public String getPortfolio(){return portfolio;}
+
+    public void setPortfolio(String portfolio){this.portfolio = portfolio;}
 
     public String getName() {
         return name;
@@ -41,42 +58,36 @@ public class ClientModel {
     }
 
     public String getDoB() {
-        return DoB;
+        return dob;
     }
 
     public void setDoB(String doB) {
-        DoB = doB;
+        dob = doB;
     }
 
     public String getRegion() {
-        return Region;
+        return region;
     }
 
     public void setRegion(String region) {
-        Region = region;
+        region = region;
     }
 
     public String getAccountType() {
-        return AccountType;
+        return accounttype;
     }
 
     public void setAccountType(String accountType) {
-        AccountType = accountType;
+        accounttype = accountType;
     }
 
     public String getOccupation() {
-        return Occupation;
+        return occupation;
     }
 
-    public void setOccupation(String occupation) {
-        Occupation = occupation;
+    public void setOccupation(String Occupation) {
+        occupation = Occupation;
     }
 
-    public Date getKYCdate() {
-        return kycdate;
-    }
 
-    public void setKYCdate(Date kycdate) {
-        this.kycdate = kycdate;
-    }
 }

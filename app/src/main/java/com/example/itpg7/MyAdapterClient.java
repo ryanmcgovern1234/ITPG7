@@ -25,8 +25,6 @@ public class MyAdapterClient extends RecyclerView.Adapter<MyAdapterClient.MyView
      }
 
 
-
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -56,5 +54,4 @@ public class MyAdapterClient extends RecyclerView.Adapter<MyAdapterClient.MyView
 
         }
     }
-
 }

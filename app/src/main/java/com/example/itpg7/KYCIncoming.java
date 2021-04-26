@@ -40,13 +40,13 @@ public class KYCIncoming extends AppCompatActivity {
         mProgressBar.setScaleY(6f);
 
         //Create Jeff Bezos
-        ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
+       /* ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
         TextView clientname = (TextView)findViewById(R.id.textView8);
         TextView clientID = (TextView)findViewById(R.id.textView2);
         clientname.setText(Jeff.getName());
         clientID.setText(Integer.toString(Jeff.getID()));
         TextView tProgressBar = (TextView)findViewById(R.id.textViewBarI);
-
+*/
         //Set Text View based on Bar
         double timeLeft = 365 - ((Double.valueOf(mProgressBar.getProgress()) * 0.01)*365);
         String progToDate = Double.toString(timeLeft);

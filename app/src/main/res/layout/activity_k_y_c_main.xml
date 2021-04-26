@@ -38,11 +38,11 @@
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="0dp"
-        android:id="@+id/kycrecyclerview"/>
+        android:id="@+id/kycrecyclerview"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginBottom="-0dp" />
 
 
 </RelativeLayout>
