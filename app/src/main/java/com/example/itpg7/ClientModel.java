@@ -5,7 +5,6 @@ import java.util.Date;
 public class ClientModel {
 
     String name;
-    Integer ID;
     String dob;
     String region;
     String accounttype;
@@ -14,10 +13,11 @@ public class ClientModel {
     String nationality;
     String portfolio;
 
-    public ClientModel(String name, Integer ID,String dob, String Region, String accounttype, String occupation, String language, String nationality, String portfolio) {
+    //public ClientsModel() {}
+
+    public ClientModel(String name, Integer ID,String dob, String region, String accounttype, String occupation, String language, String nationality, String portfolio) {
 
         this.name = name;
-        this.ID = ID;
         this.dob = dob;
         this.region = region;
         this.accounttype = accounttype;
@@ -47,14 +47,6 @@ public class ClientModel {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getID() {
-        return ID;
-    }
-
-    public void setID(Integer ID) {
-        this.ID = ID;
     }
 
     public String getDoB() {

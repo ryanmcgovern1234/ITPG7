@@ -8,29 +8,37 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.android.gms.common.api.Api;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 
 public class KYCMain extends AppCompatActivity {
 
+    private FirebaseFirestore firebaseFirestore;
 
     private RecyclerView recyclerView;
     private TextView textView;
-    private final FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private final DatabaseReference root = db.getReference();
-    private MyAdapterClient myClientAdapter;
     private ArrayList<ClientModel> clientList;
+    private FirestoreRecyclerAdapter adapter;
 
 
     @Override
@@ -38,44 +46,41 @@ public class KYCMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_k_y_c_main);
 
+        firebaseFirestore = FirebaseFirestore.getInstance();
         recyclerView = findViewById(R.id.kycrecyclerview);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        clientList = new ArrayList<>();
-        myClientAdapter = new MyAdapterClient(this, clientList);
+        //Query
+        Query query = firebaseFirestore.collection("users");
 
-        recyclerView.setAdapter(myClientAdapter);
+        //Recycler options
+        FirestoreRecyclerOptions<ClientModel> options = new FirestoreRecyclerOptions.Builder<ClientModel>()
+                .setQuery(query, ClientModel.class)
+                .build();
 
-        textView = (TextView)findViewById(R.id.textView3);
+         adapter = new FirestoreRecyclerAdapter<ClientModel, ClientsViewHolder>(options) {
+            @NonNull
+            @Override
+            public ClientsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.kyccard, parent, false);
+
+                return new ClientsViewHolder(view);
+            }
+
+            @Override
+            protected void onBindViewHolder(@NonNull ClientsViewHolder holder, int position, @NonNull ClientModel model) {
+                holder.list_name.setText(model.getName());
+
+            }
+        };
+
+         recyclerView.setHasFixedSize(true);
+         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+         recyclerView.setAdapter(adapter);
+
+        //View holder
 
 
 
-
-    new Thread(new Runnable() {
-        @Override
-        public void run() {
-            root.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                    for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                        ClientModel cModel = dataSnapshot.getValue(ClientModel.class);
-                        clientList.add(cModel);
-
-                        Log.e(cModel.name, "MSG");
-                        String s = "sasa";
-                        Log.e(s, "MSG");
-                    }
-                    myClientAdapter.notifyDataSetChanged();
-                }
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
-        }
-    }).start();
 
 
 
@@ -110,6 +115,27 @@ public class KYCMain extends AppCompatActivity {
         });
     }
 
+    private class ClientsViewHolder extends RecyclerView.ViewHolder {
+
+        private TextView list_name;
+        public ClientsViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            list_name = itemView.findViewById(R.id.namekyclist);
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
 }
 
 
