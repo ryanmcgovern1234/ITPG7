@@ -9,11 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText eUsername;
     private EditText ePasssword;
     private Button bLogin;
+
 
     String userName = "";
     String userPassword = "";
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate (Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+
+
+
 
             eUsername = findViewById(R.id.eUsername);
             ePasssword = findViewById(R.id.ePassword);

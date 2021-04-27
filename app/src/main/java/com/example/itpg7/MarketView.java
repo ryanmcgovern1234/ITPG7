@@ -19,9 +19,9 @@ import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 import org.json.JSONObject;
 
@@ -29,8 +29,8 @@ import java.util.ArrayList;
 
 public class MarketView extends AppCompatActivity {
 
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private DocumentReference techRef = db.collection("securities").document("TECH");
+    private final FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private final DatabaseReference root = db.getReference();
 
 
 
@@ -56,7 +56,6 @@ public class MarketView extends AppCompatActivity {
         mpLineChart = (LineChart) findViewById(R.id.trendview);
         blah = (TextView) findViewById(R.id.textView3);
 
-        System.out.println("Test:::" + techRef.getId());
 
             //Customer chart
         LineDataSet lineDataSetC = new LineDataSet(Customer(), "Customer");
@@ -127,6 +126,7 @@ public class MarketView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openSecurity();
+                root.setValue("Hyello");
             }
         });
 
