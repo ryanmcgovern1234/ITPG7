@@ -1,7 +1,5 @@
 package com.example.itpg7;
 
-import java.util.Date;
-
 public class ClientModel {
 
     String name;
@@ -13,7 +11,6 @@ public class ClientModel {
     String nationality;
     String portfolio;
 
-    //public ClientsModel() {}
 
     public ClientModel(String name, Integer ID,String dob, String region, String accounttype, String occupation, String language, String nationality, String portfolio) {
 
@@ -27,6 +24,9 @@ public class ClientModel {
         this.language = language;
 
     }
+
+    public ClientModel() {}
+
 
 
     public String getLanguage(){return language;}
