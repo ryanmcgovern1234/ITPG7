@@ -36,8 +36,6 @@ public class KYCMain extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
 
     private RecyclerView recyclerView;
-    private TextView textView;
-    private ArrayList<ClientModel> clientList;
     private FirestoreRecyclerAdapter adapter;
 
 
@@ -49,7 +47,7 @@ public class KYCMain extends AppCompatActivity {
         firebaseFirestore = FirebaseFirestore.getInstance();
         recyclerView = findViewById(R.id.kycrecyclerview);
 
-        //Query
+        //Query woo hoo
         Query query = firebaseFirestore.collection("users");
 
         //Recycler options
