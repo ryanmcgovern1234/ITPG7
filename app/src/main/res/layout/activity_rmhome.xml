@@ -72,50 +72,6 @@
     </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="212dp"
-        android:layout_height="82dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="199dp"
-        android:layout_marginBottom="167dp"
-        android:src="@drawable/newsbar" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="403dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginBottom="210dp"
-        android:text="Trending News"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="55dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="375dp"
-        android:layout_marginEnd="208dp"
-        android:layout_marginBottom="191dp"
-        android:src="@drawable/creditsuissenewslogo" />
-
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="103dp"
@@ -123,13 +79,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="267dp"
-        android:layout_marginEnd="226dp"
-        android:layout_marginBottom="287dp"
-        android:background="@drawable/topbartasks2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="390dp"
         android:clickable="true"
-
         app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
         app:cardElevation="30dp">
@@ -142,6 +96,13 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="122dp"
+            android:layout_height="69dp"
+            android:text="Call Jeff bezoz" />
+
 
     </androidx.cardview.widget.CardView>
 
@@ -171,6 +132,14 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="368dp"
+        android:layout_height="113dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="211dp"
+        app:srcCompat="@drawable/trendingnewsbanner2" />
 
 
 </RelativeLayout>
