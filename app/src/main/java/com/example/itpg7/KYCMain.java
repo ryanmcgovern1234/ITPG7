@@ -8,35 +8,21 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.gms.common.api.Api;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-import org.w3c.dom.Text;
 
-import java.util.ArrayList;
-
-
-public class KYCMain extends AppCompatActivity {
+public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.OnListItemClick {
 
     private FirebaseFirestore firebaseFirestore;
 
     private RecyclerView recyclerView;
-    private FirestoreRecyclerAdapter adapter;
+    private FirestoreAdapterKYC adapter;
 
 
     @Override
@@ -55,21 +41,7 @@ public class KYCMain extends AppCompatActivity {
                 .setQuery(query, ClientModel.class)
                 .build();
 
-         adapter = new FirestoreRecyclerAdapter<ClientModel, ClientsViewHolder>(options) {
-            @NonNull
-            @Override
-            public ClientsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.kyccard, parent, false);
-
-                return new ClientsViewHolder(view);
-            }
-
-            @Override
-            protected void onBindViewHolder(@NonNull ClientsViewHolder holder, int position, @NonNull ClientModel model) {
-                holder.list_name.setText(model.getName());
-
-            }
-        };
+         adapter = new FirestoreAdapterKYC(options, this);
 
          recyclerView.setHasFixedSize(true);
          recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -113,15 +85,6 @@ public class KYCMain extends AppCompatActivity {
         });
     }
 
-    private class ClientsViewHolder extends RecyclerView.ViewHolder {
-
-        private TextView list_name;
-        public ClientsViewHolder(@NonNull View itemView) {
-            super(itemView);
-
-            list_name = itemView.findViewById(R.id.namekyclist);
-        }
-    }
 
     @Override
     protected void onStop() {
@@ -134,6 +97,19 @@ public class KYCMain extends AppCompatActivity {
         super.onStart();
         adapter.startListening();
     }
+
+    @Override
+    public void onItemClick(ClientModel snapshot, int position) {
+        Log.d("ITEM_CLICK", "Clicked something" + position + "ID" + snapshot.getName());
+    }
+
+    public interface OnItemClickListener{
+        void onItemClick (DocumentSnapshot documentSnapshot, int position);
+    }
+
+
+
+
 }
 
 
