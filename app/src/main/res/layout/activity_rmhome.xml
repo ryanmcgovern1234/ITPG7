@@ -23,76 +23,6 @@
         android:textStyle="bold" />
 
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_below="@id/title_name"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="357dp"
-        android:columnCount="2"
-        android:rowCount="1">
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/Notescard"
-            android:layout_width="183dp"
-            android:layout_height="127dp"
-            android:layout_row="0"
-            android:layout_rowWeight="0"
-            android:layout_column="0"
-            android:layout_columnWeight="0"
-            android:layout_gravity="fill"
-            android:layout_margin="4dp"
-            app:cardBackgroundColor="#943F51B5"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="8dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Notes"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-
-            android:layout_width="205dp"
-            android:layout_height="150dp"
-            android:layout_row="0"
-            android:layout_rowWeight="0"
-            android:layout_column="1"
-            android:layout_columnWeight="0"
-            android:layout_gravity="fill"
-            android:layout_margin="4dp"
-            app:cardBackgroundColor="#943F51B5"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="8dp">
-
-        </androidx.cardview.widget.CardView>
-
-        <ImageView
-            android:layout_width="213dp"
-            android:layout_height="match_parent"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:foreground="@drawable/notespageicon"
-            android:src="@drawable/notespageicon"
-            app:srcCompat="@drawable/notespageicon" />
-
-
-    </GridLayout>
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
@@ -193,24 +123,26 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="266dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="241dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/topbartasks2"
         android:clickable="true"
-        app:cardBackgroundColor="#84888A"
+
+        app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
         app:cardElevation="30dp">
 
         <TextView
-            android:layout_width="104dp"
-            android:layout_height="42dp"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
             android:text="Tasks"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -224,7 +156,7 @@
         android:layout_marginTop="263dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="242dp"
-        app:cardBackgroundColor="#84888A"
+        app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
         app:cardElevation="30dp">
 
@@ -239,6 +171,16 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="251dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="283dp"
+        app:srcCompat="@drawable/topbartasks2" />
 
 
 </RelativeLayout>

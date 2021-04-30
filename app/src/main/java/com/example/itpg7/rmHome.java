@@ -50,6 +50,7 @@ public class rmHome extends AppCompatActivity{
                     case R.id.navigation_home:
                         startActivity(new Intent(getApplicationContext(), rmHome.class));
                         overridePendingTransition(0, 0);
+
                         return true;
                     case R.id.navigation_clientoverview:
                         startActivity(new Intent(getApplicationContext(), ClientOverviewPage.class));

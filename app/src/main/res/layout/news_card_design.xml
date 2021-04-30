@@ -4,22 +4,23 @@
     android:layout_height="125dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
-    app:cardElevation="8dp"
+    app:cardElevation="10dp"
     android:layout_margin="10dp"
     >
 
     <LinearLayout
+        android:id="@+id/Linear_Layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#1E4A72"
+        android:background="#BBBEC1"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/news_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="157dp"
+            android:layout_height="106dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/financialtimessquarelogo" />
+            app:srcCompat="@drawable/financialtimeslogofinal" />
     </LinearLayout>
 
 
