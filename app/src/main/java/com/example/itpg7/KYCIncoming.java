@@ -10,6 +10,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,9 +22,11 @@ public class KYCIncoming extends AppCompatActivity {
     private TextView clientname;
     private TextView clientID;
     private String jeffbby = "01012022";
-    private Date JeffDate;
     private ProgressBar mProgressBar;
     private TextView tProgressBar;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private DocumentReference noteRef= db.collection("users").document("Q4YObwAgczOd8Cy1fRui");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +54,7 @@ public class KYCIncoming extends AppCompatActivity {
         //Set Text View based on Bar
         double timeLeft = 365 - ((Double.valueOf(mProgressBar.getProgress()) * 0.01)*365);
         String progToDate = Double.toString(timeLeft);
-
+        tProgressBar = (TextView)findViewById(R.id.textViewBarI);
         tProgressBar.setText("You have " + progToDate + " days left until KYC due");
 
 

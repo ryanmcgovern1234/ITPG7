@@ -64,7 +64,7 @@ public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.On
                 switch (menuItem.getItemId()){
                     case R.id.navigation_home:
                         startActivity(new Intent(getApplicationContext(), rmHome.class));
-                        overridePendingTransition(0, 0);
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.navigation_clientoverview:
                         startActivity(new Intent(getApplicationContext(), ClientOverviewPage.class));
@@ -100,7 +100,8 @@ public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.On
 
     @Override
     public void onItemClick(ClientModel snapshot, int position) {
-        Log.d("ITEM_CLICK", "Clicked something" + position + "ID" + snapshot.getName());
+        startActivity(new Intent(getApplicationContext(), KYCIncoming.class));
+        overridePendingTransition(0, 0);
     }
 
     public interface OnItemClickListener{

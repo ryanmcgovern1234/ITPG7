@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText ePasssword;
     private Button bLogin;
 
-
     String userName = "";
     String userPassword = "";
 
@@ -25,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
 //Make it work
     class Credentials
     {
-        String name = "login";
-        String password = "1234";
+        String name = "1";
+        String password = "2";
     }
 
 
@@ -80,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
     public void openManagerHome() {
         Intent intent = new Intent(this, rmHome.class);
         startActivity(intent);
+        overridePendingTransition(1, 1);
+
     }
 
 }
