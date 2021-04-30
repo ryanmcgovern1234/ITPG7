@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="8dp"
-    app:cardCornerRadius="10dp"
-    android:padding="10dp"
     android:layout_margin="10dp"
     android:outlineSpotShadowColor="@color/teal_200"
+    android:padding="10dp"
     app:cardBackgroundColor="#003662"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
 
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="314dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/kycslidelogo" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
+                android:id="@+id/namekyclist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TestName"
-                android:textSize="25dp"
-                android:textStyle="bold"
                 android:gravity="center"
+                android:text="TestName"
                 android:textColor="#FFFFFF"
-                android:id="@+id/namekyclist"
-                />
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
