@@ -195,7 +195,7 @@
         android:layout_marginTop="-14dp"
         android:layout_marginEnd="317dp"
         android:layout_marginBottom="463dp"
-        app:srcCompat="@drawable/coolbarlogo" />
+        app:srcCompat="@drawable/coollogo2" />
 
     <ImageView
         android:id="@+id/imageView13"
