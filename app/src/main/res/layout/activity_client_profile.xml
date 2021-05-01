@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClientOverviewPage">
+    tools:context=".ClientProfile">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -24,24 +24,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="214dp"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="39dp"
-        android:text="Client Overview"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="33dp"
+        android:text="Client Profile"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/clientrecyclerview"
-        android:layout_width="400dp"
-        android:layout_height="450dp"
-        android:layout_above="@+id/nav_view"
-        android:layout_marginBottom="-0dp" />
 
 </RelativeLayout>

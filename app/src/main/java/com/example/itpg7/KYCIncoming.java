@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.ParseException;
@@ -25,7 +29,13 @@ public class KYCIncoming extends AppCompatActivity {
     private ProgressBar mProgressBar;
     private TextView tProgressBar;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private DocumentReference noteRef= db.collection("users").document("Q4YObwAgczOd8Cy1fRui");
+    private DocumentReference noteRef= db.collection("users").document("2Xte5La4YtN6dZ0dnnth");
+    private DocumentReference noteRef1= db.collection("users").document("8xCaUyfF8Xv2cFOnIFmO");
+    private DocumentReference noteRef2= db.collection("users").document("Q4YObwAgczOd8Cy1fRui");
+    private DocumentReference noteRef3= db.collection("users").document("QpZVAetM7eAMnUpOy6So");
+    private DocumentReference noteRef4= db.collection("users").document("q2hSFjYT3mbaXbuRovw8");
+    private DocumentReference noteRef5= db.collection("users").document("w9AI8I49OGDg90roZ0Wm");
+
 
 
     @Override
@@ -43,14 +53,78 @@ public class KYCIncoming extends AppCompatActivity {
         ProgressBar mProgressBar = (ProgressBar)findViewById(R.id.progressBar);
         mProgressBar.setScaleY(6f);
 
-        //Create Jeff Bezos
-       /* ClientModel Jeff = new ClientModel("Jeff Bezos", 1234, "01/01/21", "America", "Discretionary", "CEO", JeffDate);
-        TextView clientname = (TextView)findViewById(R.id.textView8);
-        TextView clientID = (TextView)findViewById(R.id.textView2);
-        clientname.setText(Jeff.getName());
-        clientID.setText(Integer.toString(Jeff.getID()));
-        TextView tProgressBar = (TextView)findViewById(R.id.textViewBarI);
-*/
+        clientname = (TextView)findViewById(R.id.textViewName);
+        clientID = (TextView)findViewById(R.id.textViewID);
+
+        if(KYCMain.adpos == 0) {
+            noteRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+        if(KYCMain.adpos == 1) {
+            noteRef1.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+        if(KYCMain.adpos == 2) {
+            noteRef2.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+        if(KYCMain.adpos == 3) {
+            noteRef3.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+        if(KYCMain.adpos == 4) {
+            noteRef4.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+        if(KYCMain.adpos == 5) {
+            noteRef5.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    DocumentSnapshot document = task.getResult();
+                    ClientModel edit = document.toObject(ClientModel.class);
+                    clientname.setText(edit.getName());
+                    clientID.setText(edit.getDoB());
+                }
+            });
+        }
+
+
+
         //Set Text View based on Bar
         double timeLeft = 365 - ((Double.valueOf(mProgressBar.getProgress()) * 0.01)*365);
         String progToDate = Double.toString(timeLeft);

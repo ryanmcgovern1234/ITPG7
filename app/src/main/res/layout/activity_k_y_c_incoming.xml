@@ -38,7 +38,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
@@ -49,10 +49,10 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView8"
+        android:layout_above="@+id/textViewName"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="196dp"
         android:layout_marginBottom="-46dp"
@@ -85,7 +85,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="196dp"
         android:layout_height="110dp"
-        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignBottom="@+id/textViewName"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="-155dp"

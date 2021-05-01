@@ -18,7 +18,8 @@
         android:layout_height="77dp"
         android:layout_gravity="bottom"
         android:foregroundGravity="bottom"
-        app:srcCompat="@drawable/orangekycbar2" />
+        app:srcCompat="@drawable/orangekycbar2"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

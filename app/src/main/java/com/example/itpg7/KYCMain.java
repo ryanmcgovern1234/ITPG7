@@ -20,9 +20,10 @@ import com.google.firebase.firestore.Query;
 public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.OnListItemClick {
 
     private FirebaseFirestore firebaseFirestore;
-
     private RecyclerView recyclerView;
     private FirestoreAdapterKYC adapter;
+    public static int adpos;
+
 
 
     @Override
@@ -100,9 +101,11 @@ public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.On
 
     @Override
     public void onItemClick(ClientModel snapshot, int position) {
+        adpos = position;
         startActivity(new Intent(getApplicationContext(), KYCIncoming.class));
         overridePendingTransition(0, 0);
     }
+
 
     public interface OnItemClickListener{
         void onItemClick (DocumentSnapshot documentSnapshot, int position);
