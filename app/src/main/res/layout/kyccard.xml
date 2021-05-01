@@ -12,15 +12,6 @@
 
     >
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:layout_gravity="bottom"
-        android:foregroundGravity="bottom"
-        app:srcCompat="@drawable/orangekycbar2"
-        />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,22 +27,50 @@
             android:orientation="horizontal">
 
 
-
-
-            <TextView
-                android:id="@+id/namekyclist"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="TestName"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
         </LinearLayout>
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="Risk Level:Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+         />
+
+    <TextView
+        android:id="@+id/namekyclist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TestName"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="308dp"
+        android:layout_height="81dp"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/kyccardbar" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/riskorangeba"
+        android:layout_gravity="center|left"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="49dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/kycnextarrow"
+        android:layout_gravity="bottom|right"/>
 
 
 </androidx.cardview.widget.CardView>
