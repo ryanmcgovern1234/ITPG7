@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
 
 
         </RelativeLayout>
@@ -50,15 +50,15 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="118dp"
+        android:layout_height="95dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="265dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="239dp"
         android:clickable="true"
         app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
@@ -95,15 +95,15 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="95dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="333dp"
+        android:layout_marginTop="321dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="241dp"
         app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
         app:cardElevation="30dp">
@@ -123,14 +123,15 @@
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="center|bottom"
             android:text="Next meeting: \nJeff Bezos @ 10am \n      Manchester"
             android:textColor="#FF5722" />
 
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="300dp"
-            android:layout_height="63dp"
+            android:layout_width="84dp"
+            android:layout_height="68dp"
+            android:layout_gravity="right|center"
             app:srcCompat="@drawable/calandercard" />
 
 
@@ -138,22 +139,36 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="267dp"
-        android:layout_height="166dp"
+        android:layout_width="259dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-32dp"
+        android:layout_marginStart="-55dp"
         android:layout_marginTop="401dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="191dp"
         app:srcCompat="@drawable/trendingnewsbanner2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-16dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="463dp"
+        app:srcCompat="@drawable/coollogo2" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
-        android:layout_height="127dp"
+        android:layout_height="122dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -161,7 +176,7 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="556dp"
+        android:layout_marginBottom="501dp"
         android:text="Welcome \nSimon Smith"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -169,18 +184,42 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="142dp"
+        android:id="@+id/imageView8"
+        android:layout_width="97dp"
+        android:layout_height="208dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginStart="-21dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginBottom="463dp"
+        app:srcCompat="@drawable/coolbarlogo" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="396dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="335dp"
         app:srcCompat="@drawable/whiteportfoliograph" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="621dp"
+        app:srcCompat="@drawable/clientelword" />
 
 
 </RelativeLayout>
