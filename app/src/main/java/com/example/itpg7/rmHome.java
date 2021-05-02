@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.example.itpg7.HelperClasses.HomeAdapter.FeaturedAdapter;
@@ -31,6 +33,15 @@ public class rmHome extends AppCompatActivity{
         //hooks
         newsRecycler = findViewById(R.id.news_recycler);
         newsRecycler();
+        newsRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.ft.com/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
 
