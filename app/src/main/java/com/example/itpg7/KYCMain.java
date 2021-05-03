@@ -6,15 +6,21 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+
+import java.util.Random;
 
 
 public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.OnListItemClick {
@@ -23,6 +29,9 @@ public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.On
     private RecyclerView recyclerView;
     private FirestoreAdapterKYC adapter;
     public static int adpos;
+    private ImageButton darkmodebutton;
+    private View view;
+    int[] color;
 
 
 
@@ -50,8 +59,27 @@ public class KYCMain extends AppCompatActivity implements FirestoreAdapterKYC.On
 
         //View holder
 
+        color = new int[] {Color.BLACK, Color.WHITE};
+
+        view = findViewById(R.id.view);
+        ImageButton darkmodebutton = (ImageButton) findViewById(R.id.darkmodebutton);
+
+        darkmodebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
 
+
+                int aryLength = color.length;
+
+                Random random = new Random();
+                int rNum = random.nextInt(aryLength);
+
+                view.setBackgroundColor(color[rNum]);
+
+
+            }
+        });
 
 
 

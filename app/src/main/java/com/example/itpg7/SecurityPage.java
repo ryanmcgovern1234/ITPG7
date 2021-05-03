@@ -120,6 +120,15 @@ public class SecurityPage extends AppCompatActivity  {
         dataVals.add(new Entry(1, 35));
         dataVals.add(new Entry(2, 30));
         dataVals.add(new Entry(3, 28));
+        dataVals.add(new Entry(4, 27));
+        dataVals.add(new Entry(5, 26));
+        dataVals.add(new Entry(6, 30));
+        dataVals.add(new Entry(7, 28));
+        dataVals.add(new Entry(8, 24));
+        dataVals.add(new Entry(9, 25));
+        dataVals.add(new Entry(10, 30));
+        dataVals.add(new Entry(11, 35));
+        dataVals.add(new Entry(12, 40));
 
         return dataVals;
     }
