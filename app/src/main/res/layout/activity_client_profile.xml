@@ -42,7 +42,24 @@
         android:layout_width="match_parent"
         android:layout_height="175dp"
         android:layout_below="@+id/textViewact"
-        android:layout_marginTop="215dp" />
+        android:layout_marginTop="185dp" >
+
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <ImageButton
+        android:id="@+id/imageButtonFina"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="82dp"
+        android:background="@null"
+        android:rotationY="180"
+        android:scaleType="fitXY"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
     <TextView
         android:id="@+id/textViewname"
@@ -51,11 +68,11 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="-28dp"
+        android:layout_marginBottom="-32dp"
+        android:gravity="center"
         android:text="TextView"
         android:textSize="28dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewdob"
@@ -63,51 +80,55 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="137dp"
-        android:layout_marginBottom="-61dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="-60dp"
         android:text="TextView"
         android:textSize="20dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/textViewlang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-118dp"
-        android:text="TextView"
-        android:textSize="22dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewnat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-120dp"
         android:text="TextView"
-        android:textSize="22dp"
-        android:textStyle="bold"/>
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewlang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-88dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-216dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-186dp"
         android:text="TextView"
-        android:textSize="22dp"
-        android:textStyle="bold"/>
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewocup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-182dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-152dp"
         android:text="TextView"
-        android:textSize="22dp"
-        android:textStyle="bold"/>
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
