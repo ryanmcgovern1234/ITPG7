@@ -2,6 +2,7 @@ package com.example.itpg7;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,17 +12,21 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.itpg7.HelperClasses.HomeAdapter.FeaturedAdapter;
 import com.example.itpg7.HelperClasses.HomeAdapter.FeaturedHelperClass;
+import com.example.itpg7.activities.Notes_Listt;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
 public class rmHome extends AppCompatActivity{
 
-    RecyclerView newsRecycler;
-    RecyclerView.Adapter adapter;
+    private RecyclerView newsRecycler;
+    private RecyclerView.Adapter adapter;
+    private CardView trendingtest;
 
 
     @Override
@@ -39,6 +44,14 @@ public class rmHome extends AppCompatActivity{
                 Uri uri = Uri.parse("https://www.ft.com/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
+            }
+        });
+
+        trendingtest = (CardView) findViewById(R.id.trendingtest);
+        trendingtest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNotes();
             }
         });
 
@@ -99,7 +112,10 @@ public class rmHome extends AppCompatActivity{
         newsRecycler.setAdapter(adapter);
     }
 
-
+    public void openNotes() {
+        Intent intent = new Intent(this, Notes_Listt.class);
+        startActivity(intent);
+    }
 
 
 

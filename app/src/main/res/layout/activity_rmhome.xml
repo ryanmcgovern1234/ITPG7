@@ -50,6 +50,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/trendingtest"
         android:layout_width="wrap_content"
         android:layout_height="106dp"
         android:layout_alignParentStart="true"
@@ -140,7 +141,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView6"
         android:layout_width="259dp"
         android:layout_height="65dp"
         android:layout_alignParentStart="true"
@@ -151,7 +151,8 @@
         android:layout_marginTop="445dp"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="147dp"
-        app:srcCompat="@drawable/trendingnewsbanner2" />
+        app:srcCompat="@drawable/trendingnewsbanner2"
+        />
 
     <TextView
         android:id="@+id/textView11"
