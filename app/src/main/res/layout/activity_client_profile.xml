@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="175dp"
         android:layout_below="@+id/textViewact"
-        android:layout_marginTop="185dp" >
+        android:layout_marginTop="200dp">
 
 
     </com.github.mikephil.charting.charts.LineChart>
@@ -52,8 +52,8 @@
         android:layout_height="48dp"
         android:layout_above="@+id/nav_view"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="246dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="217dp"
         android:background="@null"
         android:rotationY="180"
         android:scaleType="fitXY"

@@ -2,11 +2,14 @@ package com.example.itpg7;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
@@ -24,6 +27,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 
 import java.util.ArrayList;
 
@@ -32,6 +36,8 @@ public class ClientFinance extends AppCompatActivity {
     private LineChart clientgraph;
     private PieChart pieChart;
     private TextView portfoliosize;
+    private RecyclerView recyclerView;
+    private FirestoreAdapterShare adapter;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference noteRef= db.collection("users").document("2Xte5La4YtN6dZ0dnnth");
 
@@ -41,6 +47,23 @@ public class ClientFinance extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_finance);
+
+
+        recyclerView = findViewById(R.id.sharerecycler);
+        Query query = db.collection("shares");
+
+        //Recycler options
+        FirestoreRecyclerOptions<ShareModel> options = new FirestoreRecyclerOptions.Builder<ShareModel>()
+                .setQuery(query, ShareModel.class)
+                .build();
+
+        adapter = new FirestoreAdapterShare(options);
+
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
+
+
 
 
         //Chart stuff
@@ -62,8 +85,6 @@ public class ClientFinance extends AppCompatActivity {
         clientgraph.invalidate();
 
         portfoliosize = (TextView)findViewById(R.id.textViewPortfolio);
-
-
 
         noteRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -114,9 +135,9 @@ public class ClientFinance extends AppCompatActivity {
         pieChart.setDrawHoleEnabled(true);
         pieChart.setUsePercentValues(true);
         pieChart.setEntryLabelColor(Color.BLACK);
-        pieChart.setEntryLabelTextSize(6);
-        pieChart.setCenterText("Ownings by Category");
-        pieChart.setCenterTextSize(8);
+        pieChart.setEntryLabelTextSize(8);
+        pieChart.setCenterText("Securities");
+        pieChart.setCenterTextSize(10);
         pieChart.getDescription().setEnabled(false);
 
         Legend l = pieChart.getLegend();
@@ -126,6 +147,18 @@ public class ClientFinance extends AppCompatActivity {
         l.setDrawInside(false);
         l.setEnabled(true);
 
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
     }
 
     private void loadPieChartData(){
