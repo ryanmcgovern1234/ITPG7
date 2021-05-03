@@ -151,24 +151,10 @@
         android:layout_marginBottom="191dp"
         app:srcCompat="@drawable/trendingnewsbanner2" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="203dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-16dp"
-        android:layout_marginTop="-9dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="463dp"
-        app:srcCompat="@drawable/coollogo2" />
-
     <TextView
         android:id="@+id/textViewlang"
         android:layout_width="wrap_content"
-        android:layout_height="122dp"
+        android:layout_height="114dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -176,26 +162,12 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="501dp"
-        android:text="Welcome \nSimon Smith"
+        android:layout_marginBottom="455dp"
+        android:text="Welcome \nHector Weston"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="42sp"
         android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="97dp"
-        android:layout_height="208dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-21dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginBottom="463dp"
-        app:srcCompat="@drawable/coollogo2" />
 
     <ImageView
         android:id="@+id/imageView13"

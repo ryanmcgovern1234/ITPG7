@@ -60,12 +60,5 @@
         android:layout_gravity="top|right"
         app:srcCompat="@drawable/kycnextarrow" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="231dp"
-        android:layout_height="75dp"
-        android:layout_gravity="bottom|right"
-        app:srcCompat="@drawable/kycfinalbar" />
-
 
 </androidx.cardview.widget.CardView>
