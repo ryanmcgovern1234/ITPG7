@@ -79,8 +79,8 @@ public class rmHome extends AppCompatActivity{
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.financialtimessquarelogo));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.lselogo));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.financialtimelogo223));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.londonstockexchange223));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.bbclogo));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.wallstreetjournal));
 

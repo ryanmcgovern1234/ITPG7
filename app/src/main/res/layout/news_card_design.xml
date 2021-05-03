@@ -17,10 +17,11 @@
 
         <ImageView
             android:id="@+id/news_image"
-            android:layout_width="157dp"
-            android:layout_height="106dp"
+            android:layout_width="175dp"
+            android:layout_height="125dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/financialtimeslogofinal" />
+            app:srcCompat="@drawable/financialtimelogo223"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 

@@ -23,7 +23,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="115dp"
         android:layout_above="@+id/nav_view"
         android:layout_marginTop="420dp"
         android:layout_marginBottom="0dp"
@@ -31,7 +31,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
 
 
             <androidx.recyclerview.widget.RecyclerView
@@ -50,13 +51,13 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="95dp"
+        android:layout_height="106dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="323dp"
+        android:layout_marginTop="372dp"
         android:layout_marginEnd="210dp"
         android:layout_marginBottom="239dp"
         android:clickable="true"
@@ -95,13 +96,13 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="95dp"
+        android:layout_height="104dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="321dp"
+        android:layout_marginTop="372dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="241dp"
         app:cardBackgroundColor="#C7C9CA"
@@ -137,6 +138,7 @@
 
     </androidx.cardview.widget.CardView>
 
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="259dp"
@@ -145,30 +147,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-55dp"
-        android:layout_marginTop="401dp"
-        android:layout_marginEnd="192dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginStart="-35dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="147dp"
         app:srcCompat="@drawable/trendingnewsbanner2" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="203dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-16dp"
-        android:layout_marginTop="-9dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="463dp"
-        app:srcCompat="@drawable/coollogo2" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
-        android:layout_height="122dp"
+        android:layout_height="143dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -176,50 +164,54 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="501dp"
+        android:layout_marginBottom="540dp"
         android:text="Welcome \nSimon Smith"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#C3B9C5"
         android:textSize="42sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="97dp"
-        android:layout_height="208dp"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-21dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginBottom="463dp"
-        app:srcCompat="@drawable/coollogo2" />
+        android:layout_marginStart="-27dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="551dp"
+        app:srcCompat="@drawable/newtopbarimage" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="146dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="659dp"
+        app:srcCompat="@drawable/topbarlogocs" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="396dp"
-        android:layout_height="143dp"
+        android:layout_width="402dp"
+        android:layout_height="164dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="179dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="335dp"
-        app:srcCompat="@drawable/whiteportfoliograph" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="137dp"
-        android:layout_height="36dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="621dp"
-        app:srcCompat="@drawable/clientelword" />
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="355dp"
+        app:srcCompat="@drawable/cppgraph" />
 
 
 </RelativeLayout>
