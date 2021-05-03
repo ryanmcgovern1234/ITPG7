@@ -2,12 +2,15 @@ package com.example.itpg7;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -25,6 +28,7 @@ public class SecurityPage extends AppCompatActivity  {
     private Button loadbtn;
     private TextView txtview;
     private String ticker;
+    private ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,14 @@ public class SecurityPage extends AppCompatActivity  {
         secgraph = (LineChart) findViewById(R.id.security);
         edtxt = (EditText) findViewById(R.id.editText1);
         loadbtn = (Button) findViewById(R.id.loadbutton);
+
+        ImageButton backbtn = (ImageButton)findViewById(R.id.imageButton4);
+        backbtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                backMV();
+            }
+        });
 
         //Loading graphs for stocks
 
@@ -84,10 +96,19 @@ public class SecurityPage extends AppCompatActivity  {
     private ArrayList<Entry> MSFT(){
 
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0,0));
+        dataVals.add(new Entry(0,28));
         dataVals.add(new Entry(1, 35));
         dataVals.add(new Entry(2, 30));
         dataVals.add(new Entry(3, 28));
+        dataVals.add(new Entry(4, 27));
+        dataVals.add(new Entry(5, 26));
+        dataVals.add(new Entry(6, 30));
+        dataVals.add(new Entry(7, 28));
+        dataVals.add(new Entry(8, 24));
+        dataVals.add(new Entry(9, 25));
+        dataVals.add(new Entry(10, 30));
+        dataVals.add(new Entry(11, 35));
+        dataVals.add(new Entry(12, 40));
 
         return dataVals;
     }
@@ -112,6 +133,10 @@ public class SecurityPage extends AppCompatActivity  {
         dataVals.add(new Entry(3, 28));
 
         return dataVals;
+    }
+    public void backMV() {
+        Intent intent = new Intent(this, MarketView.class);
+        startActivity(intent);
     }
 
 }

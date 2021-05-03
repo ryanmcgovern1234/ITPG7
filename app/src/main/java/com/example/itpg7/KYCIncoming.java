@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -23,6 +26,8 @@ import java.util.Date;
 
 public class KYCIncoming extends AppCompatActivity {
 
+
+    private ImageButton kycfinbut;
     private TextView clientname;
     private TextView clientID;
     private String jeffbby = "01012022";
@@ -42,6 +47,14 @@ public class KYCIncoming extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_k_y_c_incoming);
+
+        kycfinbut = (ImageButton)findViewById(R.id.imageButtonfin);
+        kycfinbut.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                KYCFin();
+            }
+        });
 
         SimpleDateFormat JDateFormat = new SimpleDateFormat("yyyy-MM-dd-");
         try {
@@ -154,13 +167,16 @@ public class KYCIncoming extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.navigation_KYC:
-                        startActivity(new Intent(getApplicationContext(), KYCExisting.class));
+                        startActivity(new Intent(getApplicationContext(), KYCMain.class));
                         overridePendingTransition(0, 0);
                         return true;
-
                 }
                 return false;
             }
         });
+    }
+    public void KYCFin() {
+        Intent intent = new Intent(this, kycfin.class);
+        startActivity(intent);
     }
 }

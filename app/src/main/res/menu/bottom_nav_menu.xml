@@ -20,8 +20,5 @@
         android:id="@+id/navigation_KYC"
         android:icon="@drawable/ic_kyccheck"
         android:title="@string/know_your_client" />
-    <item
-        android:id="@+id/navigation_map"
-        android:icon="@drawable/ic_map"
-        android:title="@string/map" />
+
 </menu>

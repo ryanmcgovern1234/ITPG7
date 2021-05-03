@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.itpg7.ClientModel;
 import com.example.itpg7.R;
 
 import java.util.ArrayList;
@@ -61,7 +62,7 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
         return featuredLocations.size();
     }
 
-    public static class FeaturedViewHolder extends RecyclerView.ViewHolder{
+    public static class FeaturedViewHolder extends RecyclerView.ViewHolder {
 
         ImageView image;
         LinearLayout linearLayout;
@@ -75,9 +76,7 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
 
 
         }
+
     }
 
-    public interface OnNoteListener{
-        void onNoteClick(int position);
-    }
 }
