@@ -24,6 +24,16 @@
         <activity android:name=".MarketView" />
         <activity android:name=".SecurityPage" />
         <activity android:name=".MainActivity">
+        <activity android:name=".activities.Notes_Listt"></activity>
+        <activity
+            android:name=".activities.CreateNoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

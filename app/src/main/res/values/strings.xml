@@ -21,4 +21,12 @@
     <string name="KYCClientname"><u><b>TextView</b></u></string>
     <string name="kyc_page"><b><u>KYC Page</u></b></string>
     <string name="incoming_client"><b><u>Know Your Client</u></b></string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_notes">Search notes</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="type_note_here">Type note here...</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
+    <string name="delete_note">Delete note</string>
+    <string name="cancel_dialogue">Cancel</string>
 </resources>

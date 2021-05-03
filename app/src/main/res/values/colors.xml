@@ -8,4 +8,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="dark_blue">#003662</color>
+    <color name="grey">#BBB7B7</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#DC791C</color>
+    <color name="colorsearchIcon">#DBDBDB</color>
+    <color name="colortextHint">#7B7B7B</color>
+    <color name="colorQuickActionBar">#A5A2A2</color>
+    <color name="colorIcons">#A4A4A4</color>
+    <color name="colortxtSubtitle">#CECECE</color>
+    <color name="colordefaultNotecolor">#333333</color>
+    <color name="colorNotesubtitleTxt">#FAFAFA</color>
+    <color name="colormiscBckground">#1F1F1F</color>
+    <color name="colorNotecolor2">#FDBE3B</color>
+    <color name="colorNotecolor3">#FF4842</color>
+    <color name="colorNotecolor4">#3AF2Fc</color>
+    <color name="colorNotecolor5">#000000</color>
+    <color name="colordelete">#FF4842</color>
+    <color name="colorsearchbackground">#A5A2A2</color>
 </resources>
