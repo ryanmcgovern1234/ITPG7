@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -39,6 +41,8 @@ public class ClientProfile extends AppCompatActivity {
     private TextView clientlang;
     private TextView clientocup;
     private LineChart clientgraph;
+    private ImageButton backbtn;
+
 
 
     @Override
@@ -50,9 +54,23 @@ public class ClientProfile extends AppCompatActivity {
         LineDataSet lineDataSetC = new LineDataSet(CustomerVals(), "Customer");
         ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
         dataSetC.add(lineDataSetC);
+        clientgraph.setDescription(null);
+        clientgraph.getXAxis().setDrawLabels(false);
+        lineDataSetC.setValueTextSize(0f);
+        clientgraph.getAxisLeft().setDrawLabels(false);
+        clientgraph.getLegend().setEnabled(false);
         LineData dataC = new LineData(dataSetC);
         clientgraph.setData(dataC);
         clientgraph.invalidate();
+
+        ImageButton backbtn = (ImageButton)findViewById(R.id.imageButtonFina);
+        backbtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                openFin();
+            }
+        });
+
 
 
         clientact = (TextView)findViewById(R.id.textViewact);
@@ -199,7 +217,7 @@ public class ClientProfile extends AppCompatActivity {
 
     private ArrayList<Entry> CustomerVals(){
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 20000));
+        dataVals.add(new Entry(0, 21000));
         dataVals.add(new Entry(1, 25000));
         dataVals.add(new Entry(2, 26000));
         dataVals.add(new Entry(3, 28000));
@@ -230,5 +248,10 @@ public class ClientProfile extends AppCompatActivity {
 
 
         return dataVals;
+    }
+
+    public void openFin() {
+        Intent intent = new Intent(this, ClientFinance.class);
+        startActivity(intent);
     }
 }

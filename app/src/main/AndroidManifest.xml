@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ITPG7">
-        <activity android:name=".kycfin"></activity>
+        <activity android:name=".ClientFinance"></activity>
+        <activity android:name=".kycfin" />
         <activity android:name=".ClientProfile" />
         <activity android:name=".KYCIncoming" />
         <activity android:name=".KYCMain" />
