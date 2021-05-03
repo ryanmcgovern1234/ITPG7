@@ -42,8 +42,6 @@
         android:layout_height="175dp"
         android:layout_below="@+id/textViewact"
         android:layout_marginTop="200dp">
-
-
     </com.github.mikephil.charting.charts.LineChart>
 
     <ImageButton
@@ -53,7 +51,7 @@
         android:layout_above="@+id/nav_view"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="217dp"
+        android:layout_marginBottom="120dp"
         android:background="@null"
         android:rotationY="180"
         android:scaleType="fitXY"
