@@ -8,12 +8,19 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
 
 public class ClientProfile extends AppCompatActivity {
 
@@ -31,13 +38,22 @@ public class ClientProfile extends AppCompatActivity {
     private TextView clientact;
     private TextView clientlang;
     private TextView clientocup;
-
+    private LineChart clientgraph;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_profile);
+
+        clientgraph = (LineChart) findViewById(R.id.clienttrendview);
+        LineDataSet lineDataSetC = new LineDataSet(CustomerVals(), "Customer");
+        ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
+        dataSetC.add(lineDataSetC);
+        LineData dataC = new LineData(dataSetC);
+        clientgraph.setData(dataC);
+        clientgraph.invalidate();
+
 
         clientact = (TextView)findViewById(R.id.textViewact);
         clientname = (TextView)findViewById(R.id.textViewname);
@@ -179,5 +195,40 @@ public class ClientProfile extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private ArrayList<Entry> CustomerVals(){
+        ArrayList<Entry> dataVals = new ArrayList<Entry>();
+        dataVals.add(new Entry(0, 20000));
+        dataVals.add(new Entry(1, 25000));
+        dataVals.add(new Entry(2, 26000));
+        dataVals.add(new Entry(3, 28000));
+        dataVals.add(new Entry(4, 26000));
+        dataVals.add(new Entry(5, 22000));
+        dataVals.add(new Entry(6, 28000));
+        dataVals.add(new Entry(7, 29000));
+        dataVals.add(new Entry(8, 29000));
+        dataVals.add(new Entry(9, 28000));
+        dataVals.add(new Entry(10, 28000));
+        dataVals.add(new Entry(11, 28000));
+        dataVals.add(new Entry(12, 30000));
+        dataVals.add(new Entry(13, 31000));
+        dataVals.add(new Entry(14, 32000));
+        dataVals.add(new Entry(15, 31000));
+        dataVals.add(new Entry(16, 33000));
+        dataVals.add(new Entry(17, 33000));
+        dataVals.add(new Entry(18, 34000));
+        dataVals.add(new Entry(19, 34000));
+        dataVals.add(new Entry(20, 34000));
+        dataVals.add(new Entry(21, 35000));
+        dataVals.add(new Entry(22, 34500));
+        dataVals.add(new Entry(23, 32500));
+        dataVals.add(new Entry(24, 33500));
+        dataVals.add(new Entry(25, 36000));
+        dataVals.add(new Entry(26, 37000));
+
+
+
+        return dataVals;
     }
 }

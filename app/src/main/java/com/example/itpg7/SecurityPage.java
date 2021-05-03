@@ -3,6 +3,7 @@ package com.example.itpg7;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,8 +40,7 @@ public class SecurityPage extends AppCompatActivity  {
         edtxt = (EditText) findViewById(R.id.editText1);
         loadbtn = (Button) findViewById(R.id.loadbutton);
 
-        Button backbtn = (Button) findViewById(R.id.buttonback);
-
+        ImageButton backbtn = (ImageButton)findViewById(R.id.imageButton4);
         backbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

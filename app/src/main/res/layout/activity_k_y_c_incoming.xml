@@ -17,10 +17,9 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="504dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/backgroundmain" />
 
     <TextView
@@ -30,9 +29,9 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/incoming_client"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
@@ -116,8 +115,8 @@
         android:layout_height="75dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="9dp"
         android:background="@drawable/moon" />
 
 
