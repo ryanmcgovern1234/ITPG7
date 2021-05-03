@@ -57,7 +57,7 @@ public class ClientProfile extends AppCompatActivity {
         clientgraph.setDescription(null);
         clientgraph.getXAxis().setDrawLabels(false);
         lineDataSetC.setValueTextSize(0f);
-        clientgraph.getAxisLeft().setDrawLabels(false);
+        clientgraph.getAxisRight().setDrawLabels(false);
         clientgraph.getLegend().setEnabled(false);
         LineData dataC = new LineData(dataSetC);
         clientgraph.setData(dataC);

@@ -20,9 +20,9 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="20dp"
         android:text="Client Finance"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
@@ -52,23 +52,24 @@
         android:layout_below="@+id/clienttrendview"
         android:layout_marginTop="-344dp" />
 
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="-73dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="-102dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="Fee Code: B2" />
 
     <TextView
         android:id="@+id/textViewPortfolio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginStart="18dp"
-        android:layout_marginBottom="-45dp"
+        android:layout_marginBottom="-74dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="sasa" />
 
@@ -77,9 +78,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="-103dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="-138dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="Volatility: Low" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="110dp"
+        android:layout_height="99dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginBottom="-8dp"
+        app:srcCompat="@drawable/moon" />
 
 </RelativeLayout>

@@ -58,15 +58,14 @@
         android:layout_width="91dp"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="452dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="390dp"
         android:layout_toEndOf="@+id/editText1"
         android:shadowColor="#000000"
         android:shadowDy="5"
         android:shadowRadius="5"
         android:text="Load"
-        app:backgroundTint="#003662"
-        />
+        app:backgroundTint="#003662" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/security"

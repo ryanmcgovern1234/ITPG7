@@ -55,7 +55,6 @@ public class SecurityPage extends AppCompatActivity  {
             public void onClick(View view) {
                 ticker = edtxt.getText().toString();
                 onClickMe();
-                txtview.setText(ticker);
 
             }
         });
