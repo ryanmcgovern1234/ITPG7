@@ -7,11 +7,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,9 +23,13 @@ import com.example.itpg7.activities.Notes_Listt;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class rmHome extends AppCompatActivity{
 
+    private ImageButton darkmode1;
+    private View view2;
+    int[] color2;
     private RecyclerView newsRecycler;
     private RecyclerView.Adapter adapter;
     private CardView trendingtest;
@@ -55,6 +61,22 @@ public class rmHome extends AppCompatActivity{
             }
         });
 
+
+        color2 = new int[] {Color.BLACK, Color.WHITE,};
+        view2 = findViewById(R.id.view2);
+        ImageButton darkmode1 = (ImageButton) findViewById(R.id.darkmode1);
+
+        darkmode1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int aryLength = color2.length;
+
+                Random random = new Random();
+                int rNum = random.nextInt(aryLength);
+
+                view2.setBackgroundColor(color2[rNum]);
+            }
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
 
