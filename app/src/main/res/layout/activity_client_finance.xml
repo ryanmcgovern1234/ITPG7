@@ -69,23 +69,13 @@
 
     <TextView
         android:id="@+id/textViewPortfolio"
-        android:layout_width="89dp"
-        android:layout_height="49dp"
+        android:layout_width="143dp"
+        android:layout_height="47dp"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="-3dp"
-        android:layout_marginBottom="-125dp"
+        android:layout_marginStart="-33dp"
+        android:layout_marginBottom="-141dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="sasa" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="-8dp"
-        android:layout_marginBottom="-153dp"
-        android:layout_toEndOf="@+id/piechart"
-        android:text="Fee Code: B2" />
 
     <TextView
         android:id="@+id/textView11"
@@ -93,9 +83,19 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginStart="-7dp"
-        android:layout_marginBottom="-189dp"
+        android:layout_marginBottom="-208dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="Volatility: Low" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginStart="-8dp"
+        android:layout_marginBottom="-172dp"
+        android:layout_toEndOf="@+id/piechart"
+        android:text="Fee Code: B2" />
 
     <TextView
         android:id="@+id/textView13"
