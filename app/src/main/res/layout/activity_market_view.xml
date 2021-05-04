@@ -23,25 +23,27 @@
 
     <ImageView
         android:id="@+id/imageView24"
-        android:layout_width="194dp"
-        android:layout_height="192dp"
+        android:layout_width="wrap_content"
+        android:layout_height="149dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="-16dp"
-        android:layout_marginEnd="218dp"
-        android:layout_marginBottom="598dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-59dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="569dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
     <ImageView
         android:id="@+id/imageView21"
-        android:layout_width="110dp"
-        android:layout_height="99dp"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
         android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="281dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="335dp"
         android:layout_marginBottom="89dp"
         app:srcCompat="@drawable/moon" />
 
@@ -52,9 +54,9 @@
         android:layout_alignBottom="@+id/imageView16"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/market_analysis"
         android:textColor="#C3B9C5"
         android:textSize="40sp"
@@ -158,5 +160,15 @@
         android:background="@color/black"
         android:text="Securities ->"
         app:backgroundTint="#003662" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/topbarlogocs" />
 
 </RelativeLayout>
