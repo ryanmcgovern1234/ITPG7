@@ -35,6 +35,16 @@
         android:layout_marginBottom="598dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="110dp"
@@ -75,8 +85,8 @@
         android:layout_height="48dp"
         android:layout_above="@+id/nav_view"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="161dp"
         android:background="@null"
         android:rotationY="180"
         android:scaleType="fitXY"
@@ -151,6 +161,48 @@
         android:text="TextView"
         android:textSize="20dp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="62dp"
+        android:layout_toEndOf="@+id/editText1"
+        android:text="Add Note" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/trendingtest"
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="112dp"
+        android:clickable="true"
+        app:cardBackgroundColor="#C7C9CA"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:id="@+id/noteview"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>

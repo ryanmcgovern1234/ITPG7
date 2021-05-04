@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -26,7 +28,8 @@ import java.util.ArrayList;
 
 public class ClientProfile extends AppCompatActivity {
 
-
+    private EditText edtxt;
+    private TextView notetext;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference noteRef= db.collection("users").document("2Xte5La4YtN6dZ0dnnth");
     private DocumentReference noteRef1= db.collection("users").document("8xCaUyfF8Xv2cFOnIFmO");
@@ -41,6 +44,7 @@ public class ClientProfile extends AppCompatActivity {
     private TextView clientlang;
     private TextView clientocup;
     private LineChart clientgraph;
+    private Button notebtn;
     private ImageButton backbtn;
 
 
@@ -70,6 +74,21 @@ public class ClientProfile extends AppCompatActivity {
                 openFin();
             }
         });
+
+
+        edtxt = (EditText) findViewById(R.id.editText1);
+        notetext = (TextView) findViewById(R.id.noteview);
+        notebtn = (Button) findViewById(R.id.button);
+
+
+        notebtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                notetext.setText(edtxt.getText().toString());
+
+            }
+        });
+
 
 
 
