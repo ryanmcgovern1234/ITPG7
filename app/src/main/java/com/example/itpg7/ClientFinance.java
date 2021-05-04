@@ -135,9 +135,9 @@ public class ClientFinance extends AppCompatActivity {
         pieChart.setDrawHoleEnabled(true);
         pieChart.setUsePercentValues(true);
         pieChart.setEntryLabelColor(Color.BLACK);
-        pieChart.setEntryLabelTextSize(8);
+        pieChart.setEntryLabelTextSize(0);
         pieChart.setCenterText("Securities");
-        pieChart.setCenterTextSize(10);
+        pieChart.setCenterTextSize(12);
         pieChart.getDescription().setEnabled(false);
 
         Legend l = pieChart.getLegend();
@@ -165,7 +165,7 @@ public class ClientFinance extends AppCompatActivity {
         ArrayList<PieEntry> entries = new ArrayList<>();
         entries.add(new PieEntry(0.5f, "Equities"));
         entries.add(new PieEntry(0.3f, "Bonds"));
-        entries.add(new PieEntry(0.2f, "Real Estate?"));
+        entries.add(new PieEntry(0.2f, "Derivatives"));
 
         ArrayList<Integer> colors = new ArrayList<Integer>();
         for(int color: ColorTemplate.MATERIAL_COLORS){
