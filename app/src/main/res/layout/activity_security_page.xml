@@ -20,11 +20,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="-4dp"
         android:layout_marginTop="-20dp"
         android:layout_marginEnd="210dp"
-        android:layout_marginBottom="611dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
     <ImageView
@@ -86,10 +84,8 @@
         android:layout_width="91dp"
         android:layout_height="45dp"
         android:layout_below="@+id/imageView16"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="28dp"
         android:layout_marginTop="13dp"
-        android:layout_marginBottom="548dp"
         android:layout_toEndOf="@+id/editText1"
         android:shadowColor="#000000"
         android:shadowDy="5"

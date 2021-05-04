@@ -64,28 +64,30 @@
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
-        android:layout_width="300dp"
-        android:layout_height="167dp"
+        android:layout_width="281dp"
+        android:layout_height="170dp"
         android:layout_below="@+id/clienttrendview"
-        android:layout_marginTop="-321dp" />
+        android:layout_marginTop="-324dp" />
 
     <TextView
         android:id="@+id/textViewPortfolio"
-        android:layout_width="143dp"
-        android:layout_height="47dp"
+        android:layout_width="163dp"
+        android:layout_height="45dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginStart="-33dp"
-        android:layout_marginBottom="-141dp"
+        android:layout_marginBottom="-139dp"
         android:layout_toEndOf="@+id/piechart"
-        android:text="sasa" />
+        android:text="sasa"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="-7dp"
+        android:layout_marginStart="-34dp"
         android:layout_marginBottom="-208dp"
+        android:textColor="@color/black"
         android:layout_toEndOf="@+id/piechart"
         android:text="Volatility: Low" />
 
@@ -94,7 +96,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="-8dp"
+        android:layout_marginStart="-34dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="-172dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="Fee Code: B2" />
@@ -112,11 +115,11 @@
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="110dp"
-        android:layout_height="99dp"
+        android:layout_height="68dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="111dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="98dp"
         app:srcCompat="@drawable/moon" />
 
     <androidx.recyclerview.widget.RecyclerView
