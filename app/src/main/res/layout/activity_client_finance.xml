@@ -35,9 +35,9 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="41dp"
         android:text="Client Finance"
         android:textColor="#C3B9C5"
         android:textSize="40sp"
@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginBottom="-27dp"
+        android:layout_marginLeft="5dp"
         android:text="Overall Performance"
         android:textColor="#003662"
         android:textSize="18dp" />
@@ -72,7 +73,7 @@
     <TextView
         android:id="@+id/textViewPortfolio"
         android:layout_width="163dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginStart="-33dp"
         android:layout_marginBottom="-139dp"
@@ -107,19 +108,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginStart="-299dp"
-        android:layout_marginBottom="-396dp"
+        android:layout_marginStart="-274dp"
+        android:layout_marginBottom="-395dp"
         android:layout_toEndOf="@+id/piechart"
+        android:textColor="@color/black"
         android:text="Shares Owned:" />
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="110dp"
-        android:layout_height="68dp"
+        android:layout_width="128dp"
+        android:layout_height="83dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="98dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="91dp"
         app:srcCompat="@drawable/moon" />
 
     <androidx.recyclerview.widget.RecyclerView

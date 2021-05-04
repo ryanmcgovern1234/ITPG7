@@ -98,35 +98,33 @@ public class ClientFinance extends AppCompatActivity {
 
     private ArrayList<Entry> CustomerVals(){
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 21000));
-        dataVals.add(new Entry(1, 25000));
-        dataVals.add(new Entry(2, 26000));
-        dataVals.add(new Entry(3, 28000));
-        dataVals.add(new Entry(4, 26000));
-        dataVals.add(new Entry(5, 22000));
-        dataVals.add(new Entry(6, 28000));
-        dataVals.add(new Entry(7, 29000));
-        dataVals.add(new Entry(8, 29000));
-        dataVals.add(new Entry(9, 28000));
-        dataVals.add(new Entry(10, 28000));
-        dataVals.add(new Entry(11, 28000));
-        dataVals.add(new Entry(12, 30000));
-        dataVals.add(new Entry(13, 31000));
-        dataVals.add(new Entry(14, 32000));
-        dataVals.add(new Entry(15, 31000));
-        dataVals.add(new Entry(16, 33000));
-        dataVals.add(new Entry(17, 33000));
-        dataVals.add(new Entry(18, 34000));
-        dataVals.add(new Entry(19, 34000));
-        dataVals.add(new Entry(20, 34000));
-        dataVals.add(new Entry(21, 35000));
-        dataVals.add(new Entry(22, 34500));
-        dataVals.add(new Entry(23, 32500));
-        dataVals.add(new Entry(24, 33500));
-        dataVals.add(new Entry(25, 36000));
-        dataVals.add(new Entry(26, 37000));
-
-
+        dataVals.add(new Entry(0, 61000));
+        dataVals.add(new Entry(1, 65000));
+        dataVals.add(new Entry(2, 66000));
+        dataVals.add(new Entry(3, 68000));
+        dataVals.add(new Entry(4, 66000));
+        dataVals.add(new Entry(5, 62000));
+        dataVals.add(new Entry(6, 68000));
+        dataVals.add(new Entry(7, 69000));
+        dataVals.add(new Entry(8, 69000));
+        dataVals.add(new Entry(9, 68000));
+        dataVals.add(new Entry(10, 68000));
+        dataVals.add(new Entry(11, 68000));
+        dataVals.add(new Entry(12, 70000));
+        dataVals.add(new Entry(13, 71000));
+        dataVals.add(new Entry(14, 72000));
+        dataVals.add(new Entry(15, 71000));
+        dataVals.add(new Entry(16, 73000));
+        dataVals.add(new Entry(17, 73000));
+        dataVals.add(new Entry(18, 74000));
+        dataVals.add(new Entry(19, 74000));
+        dataVals.add(new Entry(20, 74000));
+        dataVals.add(new Entry(21, 75000));
+        dataVals.add(new Entry(22, 74500));
+        dataVals.add(new Entry(23, 72500));
+        dataVals.add(new Entry(24, 73500));
+        dataVals.add(new Entry(25, 76000));
+        dataVals.add(new Entry(26, 75000));
 
         return dataVals;
     }

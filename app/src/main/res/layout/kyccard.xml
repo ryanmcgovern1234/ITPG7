@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="TestName"
+            android:layout_marginLeft="15dp"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -36,22 +37,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:text="Risk Level:  Medium"
-        android:textColor="#FFFFFF"
-        android:textSize="17dp" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="92dp"
-        android:layout_height="32dp"
-        android:layout_gravity="center|left"
-        app:srcCompat="@drawable/riskorangeba" />
 
     <ImageView
         android:id="@+id/imageView11"
