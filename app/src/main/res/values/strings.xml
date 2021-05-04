@@ -17,10 +17,10 @@
     <string name="energy">Energy</string>
     <string name="security_page"><b>Security Page</b></string>
     <string name="enter_ticker">Enter Ticker:</string>
-    <string name="existing_client"><u><b>Existing Client</b></u></string>
+    <string name="existing_client"><b>Existing Client</b></string>
     <string name="KYCClientname"><u><b>TextView</b></u></string>
     <string name="kyc_page"><b><u>KYC Page</u></b></string>
-    <string name="incoming_client"><b><u>Know Your Client</u></b></string>
+    <string name="incoming_client"><b>Know Your Client</b></string>
     <string name="my_notes">My Notes</string>
     <string name="search_notes">Search notes</string>
     <string name="note_title">Note Title</string>

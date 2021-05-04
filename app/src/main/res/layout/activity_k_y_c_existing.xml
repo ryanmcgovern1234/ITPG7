@@ -16,25 +16,29 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="504dp"
+        android:layout_marginBottom="492dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/backgroundmain" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="227dp"
+        android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="35dp"
         android:text="@string/existing_client"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
@@ -43,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="-31dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="-40dp"
         android:text="@string/KYCClientname"
         android:textSize="20sp" />
 
@@ -54,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView8"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="196dp"
-        android:layout_marginBottom="-46dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="-62dp"
         android:text="TextView" />
 
     <ImageButton
@@ -102,6 +106,38 @@
         android:gravity="center_horizontal"
         android:textSize="21dp"
         android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="610dp"
+        app:srcCompat="@drawable/topbarlogocs" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="215dp"
+        android:layout_height="156dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-11dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="495dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="78dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="596dp"
+        app:srcCompat="@drawable/moon" />
 
 
 </RelativeLayout>
