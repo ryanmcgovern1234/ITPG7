@@ -24,7 +24,7 @@
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="wrap_content"
-        android:layout_height="149dp"
+        android:layout_height="235dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -32,18 +32,18 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="-59dp"
         android:layout_marginEnd="177dp"
-        android:layout_marginBottom="569dp"
+        android:layout_marginBottom="597dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
     <ImageView
         android:id="@+id/imageView21"
-        android:layout_width="65dp"
-        android:layout_height="59dp"
+        android:layout_width="188dp"
+        android:layout_height="88dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="335dp"
+        android:layout_marginStart="-16dp"
+        android:layout_marginEnd="239dp"
         android:layout_marginBottom="89dp"
         app:srcCompat="@drawable/moon" />
 
@@ -54,9 +54,9 @@
         android:layout_alignBottom="@+id/imageView16"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="51dp"
         android:text="@string/market_analysis"
         android:textColor="#C3B9C5"
         android:textSize="40sp"
@@ -120,8 +120,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/nav_view"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="249dp"
         android:text="@string/client_performance"
         android:textColor="@color/cardview_dark_background" />
 
@@ -131,7 +131,7 @@
         android:layout_height="139dp"
         android:layout_alignBottom="@+id/textView7"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="-166dp"
+        android:layout_marginBottom="-154dp"
         android:layout_toEndOf="@+id/customerview"
         android:text="\nPeter Surbeck\n\nSelidova Sergeyevna\n\nLouis DuPuis "
         android:textColor="@color/design_default_color_primary_variant"
@@ -143,8 +143,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/nav_view"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="237dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="248dp"
         android:layout_toEndOf="@+id/customerview"
         android:text="@string/worst_performers"
         android:textColor="@color/cardview_dark_background" />

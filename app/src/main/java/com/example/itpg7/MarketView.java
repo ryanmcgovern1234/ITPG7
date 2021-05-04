@@ -62,6 +62,9 @@ public class MarketView extends AppCompatActivity {
         ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
         dataSetC.add(lineDataSetC);
         LineData dataC = new LineData(dataSetC);
+        customerChart.setDescription(null);
+        customerChart.getLegend().setEnabled(false);
+        customerChart.getXAxis().setDrawLabels(false);
         customerChart.setData(dataC);
         customerChart.invalidate();
 
@@ -71,6 +74,9 @@ public class MarketView extends AppCompatActivity {
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
         LineData data = new LineData(dataSets);
+        mpLineChart.setDescription(null);
+        mpLineChart.getLegend().setEnabled(false);
+        mpLineChart.getXAxis().setDrawLabels(false);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
 
@@ -84,6 +90,9 @@ public class MarketView extends AppCompatActivity {
                         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
                         dataSets.add(lineDataSet1);
                         LineData data = new LineData(dataSets);
+                        mpLineChart.setDescription(null);
+                        mpLineChart.getLegend().setEnabled(false);
+                        mpLineChart.getXAxis().setDrawLabels(false);
                         mpLineChart.setData(data);
                         mpLineChart.invalidate();
 
@@ -94,6 +103,9 @@ public class MarketView extends AppCompatActivity {
                         dataSetss.add(lineDataSet2);
 
                         LineData data2 = new LineData(dataSetss);
+                        mpLineChart.setDescription(null);
+                        mpLineChart.getLegend().setEnabled(false);
+                        mpLineChart.getXAxis().setDrawLabels(false);
                         mpLineChart.setData(data2);
                         mpLineChart.invalidate();
                         break;
@@ -103,6 +115,9 @@ public class MarketView extends AppCompatActivity {
                         dataSetsss.add(lineDataSet3);
 
                         LineData data3 = new LineData(dataSetsss);
+                        mpLineChart.setDescription(null);
+                        mpLineChart.getLegend().setEnabled(false);
+                        mpLineChart.getXAxis().setDrawLabels(false);
                         mpLineChart.setData(data3);
                         mpLineChart.invalidate();
                         break;
@@ -112,6 +127,9 @@ public class MarketView extends AppCompatActivity {
                         dataSetssss.add(lineDataSet4);
 
                         LineData data4 = new LineData(dataSetssss);
+                        mpLineChart.setDescription(null);
+                        mpLineChart.getLegend().setEnabled(false);
+                        mpLineChart.getXAxis().setDrawLabels(false);
                         mpLineChart.setData(data4);
                         mpLineChart.invalidate();
                         break;
@@ -126,7 +144,6 @@ public class MarketView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openSecurity();
-                root.setValue("Hyello");
             }
         });
 
@@ -169,10 +186,14 @@ public class MarketView extends AppCompatActivity {
     private ArrayList<Entry> Tech(){
 
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0,0));
-        dataVals.add(new Entry(1, 35));
-        dataVals.add(new Entry(2, 30));
-        dataVals.add(new Entry(3, 28));
+        dataVals.add(new Entry(0,100));
+        dataVals.add(new Entry(1, 112));
+        dataVals.add(new Entry(2, 120));
+        dataVals.add(new Entry(3, 140));
+        dataVals.add(new Entry(4, 145));
+        dataVals.add(new Entry(5, 155));
+        dataVals.add(new Entry(6, 118));
+
 
         return dataVals;
     }
@@ -181,28 +202,40 @@ public class MarketView extends AppCompatActivity {
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
         dataVals.add(new Entry(0, 20));
         dataVals.add(new Entry(1, 25));
-        dataVals.add(new Entry(2, 55));
+        dataVals.add(new Entry(2, 45));
         dataVals.add(new Entry(3, 28));
+        dataVals.add(new Entry(4, 25));
+        dataVals.add(new Entry(5, 30));
+        dataVals.add(new Entry(6, 38));
+
 
         return dataVals;
     }
 
     private ArrayList<Entry> Energy(){
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 2));
-        dataVals.add(new Entry(1, 5));
-        dataVals.add(new Entry(2, 3));
-        dataVals.add(new Entry(3, 8));
+        dataVals.add(new Entry(0, 10));
+        dataVals.add(new Entry(1, 12));
+        dataVals.add(new Entry(2, 14));
+        dataVals.add(new Entry(3, 16));
+        dataVals.add(new Entry(4, 15));
+        dataVals.add(new Entry(5, 12));
+        dataVals.add(new Entry(6, 11));
+
 
         return dataVals;
     }
 
     private ArrayList<Entry> Crypto(){
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 20));
-        dataVals.add(new Entry(1, 25));
+        dataVals.add(new Entry(0, 25));
+        dataVals.add(new Entry(1, 28));
         dataVals.add(new Entry(2, 30));
-        dataVals.add(new Entry(3, 28));
+        dataVals.add(new Entry(3, 32));
+        dataVals.add(new Entry(4, 54));
+        dataVals.add(new Entry(5, 61));
+        dataVals.add(new Entry(6, 50));
+
 
         return dataVals;
     }

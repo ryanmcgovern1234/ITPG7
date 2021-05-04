@@ -58,7 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="166dp"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="202dp"></com.github.mikephil.charting.charts.LineChart>
+        android:layout_marginTop="202dp">
+
+    </com.github.mikephil.charting.charts.LineChart>
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"

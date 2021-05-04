@@ -16,15 +16,15 @@
     <ImageView
         android:id="@+id/imageView26"
         android:layout_width="wrap_content"
-        android:layout_height="149dp"
+        android:layout_height="182dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="201dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="611dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
     <ImageView
@@ -35,9 +35,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="-10dp"
-        android:layout_marginEnd="325dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="329dp"
         android:layout_marginBottom="89dp"
         app:srcCompat="@drawable/moon" />
 
@@ -85,9 +85,11 @@
         android:id="@+id/loadbutton"
         android:layout_width="91dp"
         android:layout_height="45dp"
+        android:layout_below="@+id/imageView16"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginBottom="504dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="548dp"
         android:layout_toEndOf="@+id/editText1"
         android:shadowColor="#000000"
         android:shadowDy="5"
@@ -100,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_alignBottom="@+id/editText1"
-        android:layout_marginBottom="-264dp">
+        android:layout_marginBottom="-291dp">
 
         <ListView
             android:layout_width="match_parent"

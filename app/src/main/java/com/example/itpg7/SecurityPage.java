@@ -69,6 +69,9 @@ public class SecurityPage extends AppCompatActivity  {
             ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
             dataSetC.add(lineDataSetC);
             LineData dataC = new LineData(dataSetC);
+            secgraph.setDescription(null);
+            secgraph.getLegend().setEnabled(false);
+            secgraph.getXAxis().setDrawLabels(false);
             secgraph.setData(dataC);
             secgraph.invalidate();
         }
@@ -78,6 +81,9 @@ public class SecurityPage extends AppCompatActivity  {
             ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
             dataSetC.add(lineDataSetC);
             LineData dataC = new LineData(dataSetC);
+            secgraph.setDescription(null);
+            secgraph.getLegend().setEnabled(false);
+            secgraph.getXAxis().setDrawLabels(false);
             secgraph.setData(dataC);
             secgraph.invalidate();
         }
@@ -87,6 +93,9 @@ public class SecurityPage extends AppCompatActivity  {
             ArrayList<ILineDataSet> dataSetC = new ArrayList<>();
             dataSetC.add(lineDataSetC);
             LineData dataC = new LineData(dataSetC);
+            secgraph.setDescription(null);
+            secgraph.getLegend().setEnabled(false);
+            secgraph.getXAxis().setDrawLabels(false);
             secgraph.setData(dataC);
             secgraph.invalidate();
         }
