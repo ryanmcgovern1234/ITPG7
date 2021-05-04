@@ -29,12 +29,13 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="28dp"
         android:text="@string/incoming_client"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
@@ -114,10 +115,42 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="96dp"
         android:background="@drawable/moon" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="184dp"
+        android:layout_height="212dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="582dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="730dp"
+        app:srcCompat="@drawable/topbarlogocs" />
 
 
 </RelativeLayout>

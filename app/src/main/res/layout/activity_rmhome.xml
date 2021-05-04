@@ -53,15 +53,15 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/trendingtest"
         android:layout_width="wrap_content"
-        android:layout_height="106dp"
+        android:layout_height="108dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="401dp"
         android:layout_marginEnd="210dp"
-        android:layout_marginBottom="239dp"
+        android:layout_marginBottom="264dp"
         android:clickable="true"
         app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
@@ -98,15 +98,15 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="104dp"
+        android:layout_height="113dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="399dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="241dp"
+        android:layout_marginBottom="261dp"
         app:cardBackgroundColor="#C7C9CA"
         app:cardCornerRadius="30dp"
         app:cardElevation="30dp">
@@ -140,7 +140,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="90dp"
@@ -149,11 +148,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-35dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="463dp"
         android:layout_marginEnd="172dp"
-        android:layout_marginBottom="171dp"
-        app:srcCompat="@drawable/trendingnewsbanner2"
-        />
+        android:layout_marginBottom="164dp"
+        app:srcCompat="@drawable/trendingnewsbanner2" />
 
     <TextView
         android:id="@+id/textView11"
@@ -209,10 +207,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="193dp"
-        android:layout_marginBottom="533dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-32dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="565dp"
         app:srcCompat="@drawable/topbarlogo223322" />
 
     <ImageButton
