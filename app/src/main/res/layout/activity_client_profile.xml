@@ -21,27 +21,52 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/backgroundmain" />
 
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="194dp"
+        android:layout_height="192dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="598dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="110dp"
+        android:layout_height="99dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="89dp"
+        app:srcCompat="@drawable/moon" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="182dp"
-        android:layout_height="50dp"
+        android:layout_width="269dp"
+        android:layout_height="47dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="41dp"
         android:text="Client Profile"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/clienttrendview"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="189dp"
         android:layout_below="@+id/textViewact"
         android:layout_marginTop="200dp">
+
     </com.github.mikephil.charting.charts.LineChart>
 
     <ImageButton
@@ -65,44 +90,10 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="-32dp"
+        android:layout_marginBottom="-35dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="28dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewdob"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="-60dp"
-        android:text="TextView"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewnat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="-120dp"
-        android:text="TextView"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewlang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="-88dp"
-        android:text="TextView"
-        android:textSize="18dp"
         android:textStyle="bold" />
 
     <TextView
@@ -111,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginLeft="5dp"
-        android:layout_marginBottom="-186dp"
+        android:layout_marginBottom="-189dp"
         android:text="TextView"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -122,9 +113,43 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginLeft="5dp"
-        android:layout_marginBottom="-152dp"
+        android:layout_marginBottom="-155dp"
         android:text="TextView"
         android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewnat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-123dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewlang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-91dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewdob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="-64dp"
+        android:text="TextView"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 

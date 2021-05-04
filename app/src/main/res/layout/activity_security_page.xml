@@ -13,19 +13,43 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/backgroundmain" />
 
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="194dp"
+        android:layout_height="192dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="598dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="110dp"
+        android:layout_height="99dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="89dp"
+        app:srcCompat="@drawable/moon" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="197dp"
+        android:layout_width="264dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView16"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="105dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="42dp"
         android:text="@string/security_page"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
@@ -33,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView16"
-        android:layout_marginBottom="-45dp"
+        android:layout_marginBottom="-51dp"
         android:shadowColor="#676161"
         android:shadowDy="2"
         android:shadowRadius="2"
@@ -46,8 +70,8 @@
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView16"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="-49dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="-58dp"
         android:layout_toEndOf="@+id/textView1"
         android:ems="10"
         android:inputType="textPersonName"
@@ -58,8 +82,8 @@
         android:layout_width="91dp"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="556dp"
         android:layout_toEndOf="@+id/editText1"
         android:shadowColor="#000000"
         android:shadowDy="5"
@@ -70,9 +94,9 @@
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/security"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_alignBottom="@+id/editText1"
-        android:layout_marginBottom="-205dp" >
+        android:layout_marginBottom="-264dp">
 
         <ListView
             android:layout_width="match_parent"
@@ -81,16 +105,5 @@
 
 
     </com.github.mikephil.charting.charts.LineChart>
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="51dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="89dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        android:tint="@color/white"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
 </RelativeLayout>

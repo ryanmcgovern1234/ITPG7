@@ -40,13 +40,13 @@ public class SecurityPage extends AppCompatActivity  {
         edtxt = (EditText) findViewById(R.id.editText1);
         loadbtn = (Button) findViewById(R.id.loadbutton);
 
-        ImageButton backbtn = (ImageButton)findViewById(R.id.imageButton4);
+       /* ImageButton backbtn = (ImageButton)findViewById(R.id.imageButton4);
         backbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 backMV();
             }
-        });
+        });*/
 
         //Loading graphs for stocks
 

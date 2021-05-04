@@ -22,25 +22,49 @@
 
         app:srcCompat="@drawable/backgroundmain" />
 
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="194dp"
+        android:layout_height="192dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="600dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="110dp"
+        android:layout_height="99dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="89dp"
+        app:srcCompat="@drawable/moon" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="214dp"
-        android:layout_height="wrap_content"
+        android:layout_width="313dp"
+        android:layout_height="78dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="96dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="19dp"
         android:text="Client Overview"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/clientrecyclerview"
         android:layout_width="match_parent"
-        android:layout_height="427dp"
+        android:layout_height="540dp"
         android:layout_above="@+id/nav_view"
         android:layout_marginBottom="-0dp" />
 

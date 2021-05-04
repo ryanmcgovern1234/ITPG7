@@ -11,11 +11,11 @@
     <string name="know_your_client">Know Your Client</string>
     <string name="map">Map</string>
     <string name="title_activity_main_activity2as">MainActivity</string>
-    <string name="market_analysis"><u>Market Analysis</u></string>
+    <string name="market_analysis">Market Analysis</string>
     <string name="client_performance"><b><u>Client Performance</u></b></string>
     <string name="worst_performers"><b><u>Worst Performers:</u></b></string>
     <string name="energy">Energy</string>
-    <string name="security_page"><u><b>Security Page</b></u></string>
+    <string name="security_page"><b>Security Page</b></string>
     <string name="enter_ticker">Enter Ticker:</string>
     <string name="existing_client"><u><b>Existing Client</b></u></string>
     <string name="KYCClientname"><u><b>TextView</b></u></string>
