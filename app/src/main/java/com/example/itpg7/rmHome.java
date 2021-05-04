@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.Image;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class rmHome extends AppCompatActivity{
     private RecyclerView newsRecycler;
     private RecyclerView.Adapter adapter;
     private CardView trendingtest;
+    private ImageView trendingsth;
 
 
     @Override
@@ -53,10 +55,23 @@ public class rmHome extends AppCompatActivity{
             }
         });
 
+
+        trendingsth = (ImageView)findViewById(R.id.trendingsth);
+        trendingsth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Uri uri = Uri.parse("https://www.ft.com/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
         trendingtest = (CardView) findViewById(R.id.trendingtest);
         trendingtest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 openNotes();
             }
         });

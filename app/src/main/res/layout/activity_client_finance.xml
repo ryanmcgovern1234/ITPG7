@@ -13,19 +13,34 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/backgroundmain" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="194dp"
+        android:layout_height="192dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="598dp"
+        app:srcCompat="@drawable/topbarlogo223322" />
+
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="234dp"
-        android:layout_height="48dp"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="86dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="28dp"
         android:text="Client Finance"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textColor="#C3B9C5"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
@@ -33,18 +48,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_marginBottom="-22dp"
+        android:layout_marginBottom="-27dp"
         android:text="Overall Performance"
-        android:textSize="18dp"
-        android:textColor="#003662"/>
+        android:textColor="#003662"
+        android:textSize="18dp" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/clienttrendview"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="166dp"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="195dp"></com.github.mikephil.charting.charts.LineChart>
-
+        android:layout_marginTop="202dp"></com.github.mikephil.charting.charts.LineChart>
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
@@ -89,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_marginStart="-299dp"
-        android:layout_marginBottom="-366dp"
+        android:layout_marginBottom="-396dp"
         android:layout_toEndOf="@+id/piechart"
         android:text="Shares Owned:" />
 
@@ -99,15 +113,15 @@
         android:layout_height="99dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-14dp"
-        android:layout_marginBottom="-8dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="89dp"
         app:srcCompat="@drawable/moon" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sharerecycler"
         android:layout_width="match_parent"
-        android:layout_height="119dp"
+        android:layout_height="207dp"
         android:layout_below="@+id/imageView1"
-        android:layout_marginTop="371dp" />
+        android:layout_marginTop="399dp" />
 
 </RelativeLayout>
